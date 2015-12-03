@@ -1,0 +1,35 @@
+/*-------------------
+       Overrides
+--------------------*/
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Museo';
+  src: url("@{fontPath}/museo-regular.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url("@{fontPath}/museo-bold.otf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url("@{fontPath}/museo-light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url("@{fontPath}/museo-semibold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url("@{fontPath}/museo-thin.otf");
+  font-weight: 100;
+}

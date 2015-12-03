@@ -1,0 +1,122 @@
+/*******************************
+            Dropdown
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Icon */
+
+/* Current Text */
+
+/* Menu */
+@menuZIndex: 999;
+
+/* Text */
+
+/* Menu Item */
+
+/* Sub Menu */
+
+/* Menu Header */
+
+/* Menu Divider */
+
+/* Menu Input */
+
+/* Menu Image */
+
+/* Item Sub-Element */
+
+/* Sub-Menu Dropdown Icon */
+
+/* Description */
+
+/* Message */
+
+/* Floated Content */
+
+/*-------------------
+        Types
+--------------------*/
+
+/*------------
+   Selection
+--------------*/
+
+/* <select> */
+
+/* Responsive */
+
+/* Derived */
+
+/* Hover */
+
+/* Focus */
+
+/* Visible */
+
+/* Visible Hover */
+
+/*--------------
+     Search
+--------------*/
+
+/* Search Selection */
+
+/* Inline */
+
+
+/*--------------
+    Multiple
+--------------*/
+
+/* Split Actual Padding Between Child and Parent (allows for label spacing) */
+
+/* Child Elements */
+
+/* Dropdown Icon */
+
+/* Selection Label */
+
+
+/*-------------------
+       States
+--------------------*/
+
+/* Hovered */
+
+/* Loading */
+
+/* Active Menu Item */
+
+/* Selected */
+
+/* Error */
+
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Scrolling */
+
+
+
+/* Upward */
+
+/* Flyout Direction */
+
+/* Left */
+
+/* Simple */
+
+/* Floating */
+
+/* Pointing */

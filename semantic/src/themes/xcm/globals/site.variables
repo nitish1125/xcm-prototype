@@ -1,0 +1,83 @@
+
+/*******************************
+         Site Settings
+*******************************/
+/*-------------------
+       Fonts
+--------------------*/
+@fontName          : 'Museo';
+@importGoogleFonts  : "false";
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize       : 13px;
+
+
+/*--------------
+  Page Heading
+---------------*/
+@h1         : 2.25em;
+@headerFontWeight : normal;
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+  /* Colors */
+@blue     : #445978;
+@red      : #FF8383;
+@black    : #445978;
+@grey     : #FAFAFA;
+/*-------------------
+    Brand Colors
+--------------------*/
+
+
+@secondaryColor   : @orange;
+
+/*-------------------
+     Alpha Colors
+--------------------*/
+@transparentBlack           : #EDF2F5;
+@subtleTransparentBlack     : #EDF2F5;
+
+
+/*-------------------
+        Page
+--------------------*/
+@pageOverflowX    		: hidden;
+@textColor           	: #4D6486;
+
+
+/*******************************
+           Power-User
+*******************************/
+
+/*-------------------
+        Paths
+--------------------*/
+
+@fontPath : '../../themes/xcm/assets/fonts';
+
+
+/*-------------------
+      Borders
+--------------------*/
+@circularRadius                : 500rem 0 0 500rem;
+@solidWhiteBorderColor         : transparent;
+/*-------------------
+    Derived Values
+--------------------*/
+
+/* Minimum Mobile Width */
+@pageMinWidth   : 1140px;
+
+/*-------------------
+     Neutral Text
+--------------------*/
+@mutedTextColor              : #4D6486;
+@invertedLightTextColor      : #fff;
+

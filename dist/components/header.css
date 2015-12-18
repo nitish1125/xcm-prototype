@@ -633,7 +633,7 @@ a.ui.inverted.grey.header:hover {
   background: #F3F4F5;
   padding: 0.69230769rem 1rem;
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  border: 1px solid transparent;
   border-radius: 0.30769231rem;
 }
 .ui.tiny.block.header {
@@ -662,7 +662,7 @@ a.ui.inverted.grey.header:hover {
   margin-left: -1px;
   margin-right: -1px;
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  border: 1px solid transparent;
 }
 .ui.attached.block.header {
   background: #F3F4F5;

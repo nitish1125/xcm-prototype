@@ -21,8 +21,8 @@
         <link rel="stylesheet" href="/dist/components/item.css">
         <link rel="stylesheet" href="/dist/components/statistic.css">
         <link rel="stylesheet" href="/dist/components/container.css">
-        <link rel="stylesheet" href="/bower_components/handsontable/dist/handsontable.full.css"></link>
-
+        <link rel="stylesheet" href="/bower_components/handsontable/dist/handsontable.full.css">
+        <link rel="stylesheet" href="">
         <link rel="stylesheet" href="/dist/css/sprite.css">
     </head>
     <body>
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="ui basic segment">
+        <div class="ui attached segment">
             <div class="ui grid">
                 <div class="left floated left aligned six wide column">
                     <div class="ui mini horizontal statistic">
@@ -178,7 +178,50 @@
 
         </div>
 
-        <div class="ui fluid container">
+        <div class="ui attached segment">
+            <div class="ui grid">
+                <div class="left floated left aligned six wide column">
+                    <div class="ui small horizontal list">
+                        <div class="item">
+                            <a class="ui image svg-task_info svg-task_info-dims">
+
+                            </a>
+                            <div class="content">
+                            <a class="header">Task Info</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="ui image svg-task_issues svg-task_issues-dims">
+
+                            </a>
+                            <div class="content">
+                            <a class="header">Move Info</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="ui image svg-move_task svg-move_task-dims">
+
+                            </a>
+                            <div class="content">
+                            <a class="header">Add Issues</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a class="ui image svg-create_extensions svg-create_extensions-dims">
+
+                            </a>
+                            <div class="content">
+                            <a class="header">Create Extensions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="ui attached segment">
             <div class="ui grid">
             <div class="row">
                 <div class="wide column">
@@ -200,11 +243,13 @@
         <script src="/bower_components/handsontable/dist/pikaday/pikaday.js"></script>
         <script>
         $(function () { 
+
             $('.ui.dropdown').dropdown({
               on: 'hover'
+              
             });
 
-              var example1 = document.getElementById('example'),
+            var example1 = document.getElementById('example'),
                     settings,
                     hot;
                     coloumnHeaders = [  {'col': ''},
@@ -226,6 +271,17 @@
                             ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
                             ["","200 Street", '', 'Entity', '07/05', '','Upper,4111', '1120', 'BOS', 'Active','2','3','D','0'],
                             ["","a,Glenn ", '892357896', 'Individual', '', "ABC Fund Group, Blore&'-, Hi& inc","Upper, 3&'-, inc's & :", '1040', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                       
                     ],
 
                      columns= [

@@ -537,7 +537,7 @@
   width: calc(100% +  2px );
   max-width: calc(100% +  2px );
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  border: 1px solid transparent;
 }
 .ui.attached + .ui.attached.table:not(.top) {
   border-top: none;

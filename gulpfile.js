@@ -24,7 +24,7 @@ gulp.task('serve', ['build-ui'], function() {
 
 gulp.task('hello',function(){
 
-    console.log("hello nitish");
+    console.log("hello");
 });
 var config = {
     mode : {

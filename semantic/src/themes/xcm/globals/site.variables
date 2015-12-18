@@ -66,8 +66,9 @@
 /*-------------------
       Borders
 --------------------*/
-@circularRadius                : 500rem 0 0 500rem;
-@solidWhiteBorderColor         : transparent;
+@circularRadius                 : 500rem 0 0 500rem;
+@solidWhiteBorderColor          : transparent;
+@solidBorderColor               : transparent;
 /*-------------------
     Derived Values
 --------------------*/

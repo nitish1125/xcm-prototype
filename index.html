@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="/dist/components/statistic.css">
         <link rel="stylesheet" href="/dist/components/container.css">
         <link rel="stylesheet" href="/bower_components/handsontable/dist/handsontable.full.css">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/dist/semantic.min.css">
         <link rel="stylesheet" href="/dist/css/sprite.css">
     </head>
     <body>
@@ -180,14 +180,45 @@
 
         <div class="ui attached segment">
             <div class="ui grid">
-                <div class="left floated left aligned six wide column">
+                <div class="left floated left aligned ten wide column">
                     <div class="ui small horizontal list">
                         <div class="item">
                             <a class="ui image svg-task_info svg-task_info-dims">
 
                             </a>
                             <div class="content">
-                            <a class="header">Task Info</a>
+                                <a class="header task-info">Task Info</a>
+                                <div class="ui custom popup ">
+                                    <div class="ui relaxed grid">
+                                        <div class="column">
+                                            <div class="ui link list" id="taskInfoIndivualLink">
+                                                <a class="item">
+                                                    <h4>Jurisdiction/Deliverables</h4>
+                                                </a> 
+                                                <a class="item">
+                                                    <h4>Assembly</h4>
+                                                </a> 
+                                                <a class="item">
+                                                    <h4>Shipping</h4>
+                                                </a> 
+                                                <a class="item">
+                                                    <h4>eFile</h4></a> 
+                                                <a class="item">
+                                                    <h4>SignOff - Tasktype</h4>
+                                                </a> 
+                                                <a class="item">
+                                                    <h4>SignOff - Category</h4>
+                                                </a> 
+                                                <a class="item">
+                                                    <h4>Engagement Info</h4>
+                                                </a> 
+                                                <a class="item">
+                                                    <h4>Extension</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
@@ -241,6 +272,7 @@
         <script src="/bower_components/handsontable/dist/handsontable.full.min.js"></script>
         <script src="/bower_components/handsontable/dist/moment/moment.js"></script>
         <script src="/bower_components/handsontable/dist/pikaday/pikaday.js"></script>
+        <script src="/dist/semantic.min.js"></script>
         <script>
         $(function () { 
 
@@ -388,6 +420,16 @@
                         return item['col']}),
                   });
         
+
+
+$('.task-info')
+  .popup({
+    popup : $('.custom.popup'),
+    on    : 'hover',
+    hoverable:'true',
+  })
+;
+
 
         });
         </script>

@@ -177,7 +177,7 @@
 .ui.items > .item .avatar img {
   width: '';
   height: '';
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
 }
 
 /*--------------

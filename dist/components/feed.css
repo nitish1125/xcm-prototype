@@ -82,7 +82,7 @@
 .ui.feed > .event > .label img {
   width: 100%;
   height: auto;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
 }
 .ui.feed > .event > .label + .content {
   margin: 0.5em 0em 0.38461538em 1.15384615em;

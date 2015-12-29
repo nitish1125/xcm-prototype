@@ -207,7 +207,7 @@ a.ui.label {
   width: 0.5em;
   height: 0.5em;
   box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
 }
 
 /*-------------------
@@ -1106,7 +1106,7 @@ a.ui.basic.label:hover {
   padding: 0.5em !important;
   line-height: 1em;
   text-align: center;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
 }
 .ui.empty.circular.labels .label,
 .ui.empty.circular.label {

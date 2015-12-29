@@ -33,7 +33,7 @@
   font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
   box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2) inset;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -135,7 +135,7 @@
   margin: -0.65384615em 0em 0em -0.65384615em;
   width: 1.30769231em;
   height: 1.30769231em;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
   border: 0.2em solid rgba(0, 0, 0, 0.15);
 }
 .ui.loading.button:after {
@@ -150,7 +150,7 @@
           animation: button-spin 0.6s linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
   border-color: #FFFFFF transparent transparent;
   border-style: solid;
   border-width: 0.2em;
@@ -732,7 +732,7 @@
   background: transparent none !important;
   color: rgba(0, 0, 0, 0.6) !important;
   font-weight: normal;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
   text-transform: none;
   text-shadow: none !important;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15);
@@ -740,7 +740,7 @@
 .ui.basic.buttons {
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15);
   border: 1px solid rgba(34, 36, 38, 0.15);
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
 }
 .ui.basic.buttons .button {
   border-radius: 0em;
@@ -903,20 +903,20 @@
   border-radius: 0em;
 }
 .ui.labeled.icon.buttons .button:first-child > .icon {
-  border-top-left-radius: 500rem 0 0 500rem;
-  border-bottom-left-radius: 500rem 0 0 500rem;
+  border-top-left-radius: 500rem;
+  border-bottom-left-radius: 500rem;
 }
 .ui.labeled.icon.buttons .button:last-child > .icon {
-  border-top-right-radius: 500rem 0 0 500rem;
-  border-bottom-right-radius: 500rem 0 0 500rem;
+  border-top-right-radius: 500rem;
+  border-bottom-right-radius: 500rem;
 }
 .ui.vertical.labeled.icon.buttons .button:first-child > .icon {
   border-radius: 0em;
-  border-top-left-radius: 500rem 0 0 500rem;
+  border-top-left-radius: 500rem;
 }
 .ui.vertical.labeled.icon.buttons .button:last-child > .icon {
   border-radius: 0em;
-  border-bottom-left-radius: 500rem 0 0 500rem;
+  border-bottom-left-radius: 500rem;
 }
 
 /* Fluid Labeled */
@@ -971,7 +971,7 @@
 .ui.buttons .or:before {
   position: absolute;
   text-align: center;
-  border-radius: 500rem 0 0 500rem;
+  border-radius: 500rem;
   content: 'or';
   top: 50%;
   left: 50%;
@@ -1015,10 +1015,10 @@
 
 /* Top / Bottom */
 .ui.attached.top.button {
-  border-radius: 500rem 0 0 500rem 500rem 0 0 500rem 0em 0em;
+  border-radius: 500rem 500rem 0em 0em;
 }
 .ui.attached.bottom.button {
-  border-radius: 0em 0em 500rem 0 0 500rem 500rem 0 0 500rem;
+  border-radius: 0em 0em 500rem 500rem;
 }
 
 /* Left / Right */
@@ -1027,13 +1027,13 @@
   border-left: none;
   text-align: right;
   padding-right: 0.75em;
-  border-radius: 500rem 0 0 500rem 0em 0em 500rem 0 0 500rem;
+  border-radius: 500rem 0em 0em 500rem;
 }
 .ui.right.attached.button {
   display: inline-block;
   text-align: left;
   padding-left: 0.75em;
-  border-radius: 0em 500rem 0 0 500rem 500rem 0 0 500rem 0em;
+  border-radius: 0em 500rem 500rem 0em;
 }
 
 /* Plural */
@@ -1062,23 +1062,23 @@
 /* Top / Bottom */
 .ui[class*="top attached"].buttons {
   margin-bottom: -1px;
-  border-radius: 500rem 0 0 500rem 500rem 0 0 500rem 0em 0em;
+  border-radius: 500rem 500rem 0em 0em;
 }
 .ui[class*="top attached"].buttons .button:first-child {
-  border-radius: 500rem 0 0 500rem 0em 0em 0em;
+  border-radius: 500rem 0em 0em 0em;
 }
 .ui[class*="top attached"].buttons .button:last-child {
-  border-radius: 0em 500rem 0 0 500rem 0em 0em;
+  border-radius: 0em 500rem 0em 0em;
 }
 .ui[class*="bottom attached"].buttons {
   margin-top: -1px;
-  border-radius: 0em 0em 500rem 0 0 500rem 500rem 0 0 500rem;
+  border-radius: 0em 0em 500rem 500rem;
 }
 .ui[class*="bottom attached"].buttons .button:first-child {
-  border-radius: 0em 0em 0em 500rem 0 0 500rem;
+  border-radius: 0em 0em 0em 500rem;
 }
 .ui[class*="bottom attached"].buttons .button:last-child {
-  border-radius: 0em 0em 500rem 0 0 500rem 0em;
+  border-radius: 0em 0em 500rem 0em;
 }
 
 /* Left / Right */
@@ -1089,15 +1089,15 @@
   display: inline-flex;
   margin-right: 0em;
   margin-left: -1px;
-  border-radius: 0em 500rem 0 0 500rem 500rem 0 0 500rem 0em;
+  border-radius: 0em 500rem 500rem 0em;
 }
 .ui[class*="left attached"].buttons .button:first-child {
   margin-left: -1px;
-  border-radius: 0em 500rem 0 0 500rem 0em 0em;
+  border-radius: 0em 500rem 0em 0em;
 }
 .ui[class*="left attached"].buttons .button:last-child {
   margin-left: -1px;
-  border-radius: 0em 0em 500rem 0 0 500rem 0em;
+  border-radius: 0em 0em 500rem 0em;
 }
 .ui[class*="right attached"].buttons {
   display: -webkit-inline-box;
@@ -1106,15 +1106,15 @@
   display: inline-flex;
   margin-left: 0em;
   margin-right: -1px;
-  border-radius: 500rem 0 0 500rem 0em 0em 500rem 0 0 500rem;
+  border-radius: 500rem 0em 0em 500rem;
 }
 .ui[class*="right attached"].buttons .button:first-child {
   margin-left: -1px;
-  border-radius: 500rem 0 0 500rem 0em 0em 0em;
+  border-radius: 500rem 0em 0em 0em;
 }
 .ui[class*="right attached"].buttons .button:last-child {
   margin-left: -1px;
-  border-radius: 0em 0em 0em 500rem 0 0 500rem;
+  border-radius: 0em 0em 0em 500rem;
 }
 
 /*-------------------
@@ -3287,12 +3287,12 @@
 .ui.buttons .button:first-child {
   border-left: none;
   margin-left: 0em;
-  border-top-left-radius: 500rem 0 0 500rem;
-  border-bottom-left-radius: 500rem 0 0 500rem;
+  border-top-left-radius: 500rem;
+  border-bottom-left-radius: 500rem;
 }
 .ui.buttons .button:last-child {
-  border-top-right-radius: 500rem 0 0 500rem;
-  border-bottom-right-radius: 500rem 0 0 500rem;
+  border-top-right-radius: 500rem;
+  border-bottom-right-radius: 500rem;
 }
 
 /* Vertical  Style */
@@ -3320,7 +3320,7 @@
 .ui.vertical.buttons .small.button:first-child,
 .ui.vertical.buttons .massive.button:first-child,
 .ui.vertical.buttons .huge.button:first-child {
-  border-radius: 500rem 0 0 500rem 500rem 0 0 500rem 0px 0px;
+  border-radius: 500rem 500rem 0px 0px;
 }
 .ui.vertical.buttons .button:last-child,
 .ui.vertical.buttons .mini.button:last-child,
@@ -3330,5 +3330,5 @@
 .ui.vertical.buttons .huge.button:last-child,
 .ui.vertical.buttons .gigantic.button:last-child {
   margin-bottom: 0px;
-  border-radius: 0px 0px 500rem 0 0 500rem 500rem 0 0 500rem;
+  border-radius: 0px 0px 500rem 500rem;
 }

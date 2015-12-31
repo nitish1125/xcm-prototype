@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.6 - Form
+ * # Semantic UI 2.1.7 - Form
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -590,11 +590,6 @@
   position: relative;
   cursor: default;
   point-events: none;
-  text-shadow: none !important;
-  color: transparent !important;
-  -webkit-transition: all 0s linear;
-          transition: all 0s linear;
-  z-index: 100;
 }
 .ui.loading.form:before {
   position: absolute;

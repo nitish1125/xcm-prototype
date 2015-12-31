@@ -142,7 +142,7 @@
 
                     </div>
                 </div>
-                <div class="right floated right aligned six wide column">
+                <div class="right floated right aligned ten wide column">
                     <div class="ui small horizontal list">
                         <a href="#" class="item">
                             <div class="ui image svg-refresh svg-refresh-dims">
@@ -173,37 +173,88 @@
                             <div class="ui mini blue button">&#43;   Add Task</div>
                         </a>
                     </div>
-                    <div class="ui custom popup filter">
-                                    <div class="ui relaxed grid">
-                                        <div class="column">
-                                            <div class="ui link list" id="taskInfoIndivualLink">
-                                                <a class="item">
-                                                    <h3>Jurisdiction/Deliverables</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Assembly</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Shipping</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>eFile</h3></a> 
-                                                <a class="item">
-                                                    <h3>SignOff - Tasktype</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>SignOff - Category</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Engagement Info</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Extension</h3>
-                                                </a>
+                    <div class="ui popup filter">
+                        <div class="ui relaxed grid">
+                            <div class="ui grid" id="filterview">
+                                <div class="row filtersselected">
+                                    <div class="sixteeen wide column" id="selectedfilters"></div>
+                                </div>
+                                <div class="ui divider"></div>
+                                <div class="row" id="filtersview">
+                                    <div class="six wide column">
+                                        <label class="">Client</label>
+                                    </div>
+                                    <div class="nine wide column">
+                                        <div class="ui fluid search" id="clientName">
+                                            <div class="ui icon fluid input">
+                                                <input class="prompt" type="text" placeholder="Search Client..." autocomplete="off">
+                                                <i class="search icon"></i>
+                                            </div>
+                                            <div class="results">
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="six wide column">
+                                        <label class="">A/c</label>
+                                    </div>
+                                    <div class="nine wide column">
+                                        <div class="ui fluid search" id="clientAccountNumber">
+                                            <div class="ui icon fluid input">
+                                                <input class="prompt" type="text" placeholder="Search A/c..." autocomplete="off">
+                                                <i class="search icon"></i>
+                                            </div>
+                                            <div class="results">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="six wide column">
+                                        <label class="">Type</label>
+                                    </div>
+                                    <div class="nine wide column">
+                                        <div class="ui fluid search" id="taskType">
+                                            <div class="ui icon fluid input">
+                                                <input class="prompt" type="text" placeholder="Search Type..." autocomplete="off">
+                                                <i class="search icon"></i>
+                                            </div>
+                                            <div class="results">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="six wide column">
+                                        <label class="">Status</label>
+                                    </div>
+                                    <div class="nine wide column">
+                                        <div class="ui fluid search" id="currentStatus">
+                                            <div class="ui icon fluid input">
+                                                <input class="prompt" type="text" placeholder="Search Status..." autocomplete="off">
+                                                <i class="search icon"></i>
+                                            </div>
+                                            <div class="results"></div>
+                                        </div>
+                                    </div>
+                                    <div class="six wide column">
+                                        <label class="">Ori</label>
+                                    </div>
+                                    <div class="nine wide column">
+                                        <div class="ui fluid search" id="originatingLocation">
+                                            <div class="ui icon fluid input">
+                                                <input class="prompt" type="text" placeholder="Search Ori..." autocomplete="off">
+                                                <i class="search icon"></i>
+                                            </div>
+                                            <div class="results"></div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="ui divider"></div>
+                                <div class="row">
+                                    <div class="left floated right aligned sixteen wide column">
+                                        <div class="ui primary button applyfilters">Apply</div>
+                                        <div class="ui button resetfilters">Reset</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -481,8 +532,8 @@ $('.task-info')
 $('.filter-off')
   .popup({
     popup : $('.filter.popup'),
-    on    : 'hover',
-    hoverable:'true',
+    on    : 'click',
+    position : 'bottom left',
   })
 ;
 

@@ -173,19 +173,19 @@
                             <div class="ui mini blue button">&#43;   Add Task</div>
                         </a>
                     </div>
-                    <div class="ui popup filter">
+                    <div class="ui flowing popup filter">
                         <div class="ui relaxed grid">
-                            <div class="ui grid" id="filterview">
+                            <div class="ui grid">
                                 <div class="row filtersselected">
-                                    <div class="sixteeen wide column" id="selectedfilters"></div>
+                                    <div class="sixteeen wide column"></div>
                                 </div>
                                 <div class="ui divider"></div>
-                                <div class="row" id="filtersview">
+                                <div class="row">
                                     <div class="six wide column">
                                         <label class="">Client</label>
                                     </div>
                                     <div class="nine wide column">
-                                        <div class="ui fluid search" id="clientName">
+                                        <div class="ui fluid search">
                                             <div class="ui icon fluid input">
                                                 <input class="prompt" type="text" placeholder="Search Client..." autocomplete="off">
                                                 <i class="search icon"></i>
@@ -198,7 +198,7 @@
                                         <label class="">A/c</label>
                                     </div>
                                     <div class="nine wide column">
-                                        <div class="ui fluid search" id="clientAccountNumber">
+                                        <div class="ui fluid search">
                                             <div class="ui icon fluid input">
                                                 <input class="prompt" type="text" placeholder="Search A/c..." autocomplete="off">
                                                 <i class="search icon"></i>
@@ -211,7 +211,7 @@
                                         <label class="">Type</label>
                                     </div>
                                     <div class="nine wide column">
-                                        <div class="ui fluid search" id="taskType">
+                                        <div class="ui fluid search">
                                             <div class="ui icon fluid input">
                                                 <input class="prompt" type="text" placeholder="Search Type..." autocomplete="off">
                                                 <i class="search icon"></i>
@@ -224,7 +224,7 @@
                                         <label class="">Status</label>
                                     </div>
                                     <div class="nine wide column">
-                                        <div class="ui fluid search" id="currentStatus">
+                                        <div class="ui fluid search">
                                             <div class="ui icon fluid input">
                                                 <input class="prompt" type="text" placeholder="Search Status..." autocomplete="off">
                                                 <i class="search icon"></i>
@@ -236,7 +236,7 @@
                                         <label class="">Ori</label>
                                     </div>
                                     <div class="nine wide column">
-                                        <div class="ui fluid search" id="originatingLocation">
+                                        <div class="ui fluid search">
                                             <div class="ui icon fluid input">
                                                 <input class="prompt" type="text" placeholder="Search Ori..." autocomplete="off">
                                                 <i class="search icon"></i>
@@ -248,8 +248,8 @@
                                 <div class="ui divider"></div>
                                 <div class="row">
                                     <div class="left floated right aligned sixteen wide column">
-                                        <div class="ui primary button applyfilters">Apply</div>
-                                        <div class="ui button resetfilters">Reset</div>
+                                        <div class="ui tiny primary button applyfilters">Apply</div>
+                                        <div class="ui tiny secondary button resetfilters">Reset</div>
                                     </div>
                                 </div>
                             </div>
@@ -533,7 +533,8 @@ $('.filter-off')
   .popup({
     popup : $('.filter.popup'),
     on    : 'click',
-    position : 'bottom left',
+    position : 'bottom right',
+    setFluidWidth:'true',
   })
 ;
 

@@ -139,10 +139,10 @@
 --------------------*/
 
 @highlightBackground      : #CCE2FF;
-@highlightColor           : @textColor;
+@highlightColor           : yellow;
 
 @inputHighlightBackground : rgba(100, 100, 100, 0.4);
-@inputHighlightColor      : @textColor;
+@inputHighlightColor      : yellow;
 
 
 /*-------------------

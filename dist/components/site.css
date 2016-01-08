@@ -119,32 +119,32 @@ a:hover {
 /* Site */
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: #4D6486;
+  color: yellow;
 }
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: #4D6486;
+  color: yellow;
 }
 ::selection {
   background-color: #CCE2FF;
-  color: #4D6486;
+  color: yellow;
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #4D6486;
+  color: yellow;
 }
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #4D6486;
+  color: yellow;
 }
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: #4D6486;
+  color: yellow;
 }
 
 /*-------------------

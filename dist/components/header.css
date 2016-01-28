@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Header
+ * # Semantic UI 2.1.8 - Header
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -21,7 +21,7 @@
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
   font-family: 'Museo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: 100;
   line-height: 1.2857em;
   text-transform: none;
   color: #4D6486;

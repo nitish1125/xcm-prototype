@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - List
+ * # Semantic UI 2.1.8 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -419,7 +419,7 @@ ol.ui.list ol li,
 }
 .ui.link.list .active.item,
 .ui.link.list .active.item a:not(.ui) {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */
@@ -473,7 +473,7 @@ ol.ui.list ol li,
 .ui.selection.list .list > .item.active,
 .ui.selection.list > .item.active {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */

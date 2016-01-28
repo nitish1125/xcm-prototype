@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Accordion
+ * # Semantic UI 2.1.8 - Accordion
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -175,11 +175,11 @@
 /* Active */
 .ui.styled.accordion .active.title {
   background: transparent;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 

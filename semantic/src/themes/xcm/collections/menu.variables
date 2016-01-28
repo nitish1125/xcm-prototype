@@ -60,6 +60,8 @@
 
 /* Active Item */
 
+
+
 /* Active Hovered Item */
 
 /* Selected Dropdown */
@@ -79,6 +81,8 @@
 /* Secondary */
 
 /* Pointing */
+
+@secondaryPointingActiveBorderColor: @orange;
 
 /* Inverted Secondary */
 

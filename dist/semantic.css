@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.1.7
+ * # Semantic UI - 2.1.8
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Semantic UI 2.1.7 - Reset
+ * # Semantic UI 2.1.8 - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -495,7 +495,7 @@ th {
   padding: 0;
 }
 /*!
- * # Semantic UI 2.1.7 - Site
+ * # Semantic UI 2.1.8 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -543,7 +543,7 @@ h5 {
   font-family: 'Museo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
-  font-weight: normal;
+  font-weight: 100;
   padding: 0em;
 }
 
@@ -623,17 +623,17 @@ a:hover {
 
 ::-webkit-selection {
   background-color: #CCE2FF;
-  color: yellow;
+  color: #4D6486;
 }
 
 ::-moz-selection {
   background-color: #CCE2FF;
-  color: yellow;
+  color: #4D6486;
 }
 
 ::selection {
   background-color: #CCE2FF;
-  color: yellow;
+  color: #4D6486;
 }
 
 /* Form */
@@ -641,19 +641,19 @@ a:hover {
 textarea::-webkit-selection,
 input::-webkit-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: yellow;
+  color: #4D6486;
 }
 
 textarea::-moz-selection,
 input::-moz-selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: yellow;
+  color: #4D6486;
 }
 
 textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
-  color: yellow;
+  color: #4D6486;
 }
 
 /*-------------------
@@ -728,7 +728,7 @@ input::selection {
   font-weight: 100;
 }
 /*!
- * # Semantic UI 2.1.7 - Button
+ * # Semantic UI 2.1.8 - Button
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -749,20 +749,20 @@ input::selection {
   outline: none;
   border: none;
   vertical-align: baseline;
-  background: #FFFFFF none;
+  background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Museo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   margin: 0em 0.25em 0em 0em;
-  padding: 1.25em 3em 1.25em;
-  text-transform: uppercase;
+  padding: 0.84615385em 1.5em 0.84615385em;
+  text-transform: none;
   text-shadow: none;
   font-weight: bold;
   line-height: 1em;
   font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: 500rem;
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2) inset;
+  border-radius: 0.30769231rem;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -782,9 +782,9 @@ input::selection {
 ---------------*/
 
 .ui.button:hover {
-  background-color: #FAFAFA;
+  background-color: #CACBCD;
   background-image: none;
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -797,7 +797,7 @@ input::selection {
 ---------------*/
 
 .ui.button:focus {
-  background-color: #FAFAFA;
+  background-color: #CACBCD;
   color: rgba(0, 0, 0, 0.8);
   background-image: '' !important;
   box-shadow: '' !important;
@@ -813,10 +813,10 @@ input::selection {
 
 .ui.button:active,
 .ui.active.button:active {
-  background-color: #F0F0F0;
-  background-image: none;
+  background-color: #BABBBC;
+  background-image: '';
   color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.35) inset !important;
+  box-shadow: 0px 0px 0px 1px transparent inset, none;
 }
 
 /*--------------
@@ -824,20 +824,20 @@ input::selection {
 ---------------*/
 
 .ui.active.button {
-  background-color: #DDDDDD;
+  background-color: #C0C1C2;
   background-image: none;
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.3) inset !important;
-  color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px 0px 1px transparent inset;
+  color: #F68E1F;
 }
 
 .ui.active.button:hover {
-  background-color: #DDDDDD;
+  background-color: #C0C1C2;
   background-image: none;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.active.button:active {
-  background-color: #DDDDDD;
+  background-color: #C0C1C2;
   background-image: none;
 }
 
@@ -970,7 +970,7 @@ input::selection {
 
 .ui.animated.button .visible.content {
   position: relative;
-  margin-right: 3em;
+  margin-right: 1.5em;
 }
 
 .ui.animated.button .hidden.content {
@@ -1227,8 +1227,7 @@ input::selection {
   background-color: #3B5998;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1250,8 +1249,7 @@ input::selection {
   background-color: #0084B4;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1273,8 +1271,7 @@ input::selection {
   background-color: #DC4A38;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1316,8 +1313,7 @@ input::selection {
   background-color: #CC181E;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1339,8 +1335,7 @@ input::selection {
   background-color: #49769C;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1362,8 +1357,7 @@ input::selection {
   background-color: #00ACED;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1384,8 +1378,7 @@ input::selection {
 .ui.vk.button {
   background-color: #4D7198;
   color: #FFFFFF;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
   box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1406,15 +1399,15 @@ input::selection {
 .ui.button > .icon:not(.button) {
   height: 0.84615385em;
   opacity: 0.8;
-  margin: 0em 0.4em 0em -0.2em;
+  margin: 0em 0.46153846em 0em -0.23076923em;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
-  vertical-align: top;
+  vertical-align: '';
   color: '';
 }
 
 .ui.button > .right.icon:not(.button) {
-  margin: 0em -0.2em 0em 0.4em;
+  margin: 0em -0.23076923em 0em 0.46153846em;
 }
 
 /*******************************
@@ -1445,17 +1438,17 @@ input::selection {
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.9375em 2.25em 0.9375em;
+  padding: 0.63461538em 1.125em 0.63461538em;
 }
 
 .ui.compact.icon.buttons .button,
 .ui.compact.icon.button {
-  padding: 0.9375em 0.9375em 0.9375em;
+  padding: 0.63461538em 0.63461538em 0.63461538em;
 }
 
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.9375em 5.75em 0.9375em;
+  padding: 0.63461538em 3.81730769em 0.63461538em;
 }
 
 /*-------------------
@@ -1465,19 +1458,19 @@ input::selection {
 .ui.mini.buttons .button,
 .ui.mini.buttons .or,
 .ui.mini.button {
-  font-size: 0.7rem;
+  font-size: 0.69230769rem;
 }
 
 .ui.tiny.buttons .button,
 .ui.tiny.buttons .or,
 .ui.tiny.button {
-  font-size: 0.8rem;
+  font-size: 0.84615385rem;
 }
 
 .ui.small.buttons .button,
 .ui.small.buttons .or,
 .ui.small.button {
-  font-size: 0.875rem;
+  font-size: 0.92307692rem;
 }
 
 .ui.buttons .button,
@@ -1489,25 +1482,25 @@ input::selection {
 .ui.large.buttons .button,
 .ui.large.buttons .or,
 .ui.large.button {
-  font-size: 1.125rem;
+  font-size: 1.15384615rem;
 }
 
 .ui.big.buttons .button,
 .ui.big.buttons .or,
 .ui.big.button {
-  font-size: 1.25rem;
+  font-size: 1.30769231rem;
 }
 
 .ui.huge.buttons .button,
 .ui.huge.buttons .or,
 .ui.huge.button {
-  font-size: 1.375rem;
+  font-size: 1.46153846rem;
 }
 
 .ui.massive.buttons .button,
 .ui.massive.buttons .or,
 .ui.massive.button {
-  font-size: 1.5rem;
+  font-size: 1.69230769rem;
 }
 
 /*--------------
@@ -1516,7 +1509,7 @@ input::selection {
 
 .ui.icon.buttons .button,
 .ui.icon.button {
-  padding: 1.25em 1.25em 1.25em;
+  padding: 0.84615385em 0.84615385em 0.84615385em;
 }
 
 .ui.icon.buttons .button > .icon,
@@ -1535,16 +1528,16 @@ input::selection {
   background: transparent none !important;
   color: rgba(0, 0, 0, 0.6) !important;
   font-weight: normal;
-  border-radius: 500rem;
+  border-radius: 0.30769231rem;
   text-transform: none;
   text-shadow: none !important;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons {
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15);
+  box-shadow: none;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  border-radius: 500rem;
+  border-radius: 0.30769231rem;
 }
 
 .ui.basic.buttons .button {
@@ -1553,30 +1546,30 @@ input::selection {
 
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
-  background: #FAFAFA !important;
+  background: #FFFFFF !important;
   color: rgba(0, 0, 0, 0.8) !important;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
-  background: #FAFAFA !important;
+  background: #FFFFFF !important;
   color: rgba(0, 0, 0, 0.8) !important;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons .button:active,
 .ui.basic.button:active {
-  background: rgba(0, 0, 0, 0.02) !important;
+  background: #F8F8F8 !important;
   color: rgba(0, 0, 0, 0.9) !important;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons .active.button,
 .ui.basic.active.button {
   background: #EDF2F5 !important;
   box-shadow: '' !important;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   box-shadow: rgba(34, 36, 38, 0.35);
 }
 
@@ -1588,11 +1581,11 @@ input::selection {
 /* Vertical */
 
 .ui.basic.buttons .button:hover {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset inset;
 }
 
 .ui.basic.buttons .button:active {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(34, 36, 38, 0.15) inset inset;
 }
 
 .ui.basic.buttons .active.button {
@@ -1605,13 +1598,13 @@ input::selection {
 .ui.basic.inverted.button {
   background-color: transparent !important;
   color: #F9FAFB !important;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
 }
 
 .ui.basic.inverted.buttons .button:hover,
 .ui.basic.inverted.button:hover {
   color: #FFFFFF !important;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
 }
 
 .ui.basic.inverted.buttons .button:focus,
@@ -1624,7 +1617,7 @@ input::selection {
 .ui.basic.inverted.button:active {
   background-color: rgba(255, 255, 255, 0.08) !important;
   color: #FFFFFF !important;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.9) inset !important;
 }
 
 .ui.basic.inverted.buttons .active.button,
@@ -1632,13 +1625,13 @@ input::selection {
   background-color: rgba(255, 255, 255, 0.08);
   color: #FFFFFF;
   text-shadow: none;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.7) inset;
 }
 
 .ui.basic.inverted.buttons .active.button:hover,
 .ui.basic.inverted.active.button:hover {
   background-color: rgba(255, 255, 255, 0.15);
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
 }
 
 /* Basic Group */
@@ -1668,8 +1661,8 @@ input::selection {
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 4em !important;
-  padding-right: 3em !important;
+  padding-left: 4.19230769em !important;
+  padding-right: 1.5em !important;
 }
 
 /* Left Labeled */
@@ -1684,10 +1677,10 @@ input::selection {
   border-bottom-left-radius: inherit;
   text-align: center;
   margin: 0em;
-  width: 3.5em;
-  background-color: transparent;
+  width: 2.69230769em;
+  background-color: rgba(0, 0, 0, 0.05);
   color: '';
-  box-shadow: none;
+  box-shadow: -1px 0px 0px 0px transparent inset;
 }
 
 /* Left Labeled */
@@ -1701,8 +1694,8 @@ input::selection {
 /* Right Labeled */
 
 .ui[class*="right labeled"].icon.button {
-  padding-right: 4em !important;
-  padding-left: 3em !important;
+  padding-right: 4.19230769em !important;
+  padding-left: 1.5em !important;
 }
 
 .ui[class*="right labeled"].icon.button > .icon {
@@ -1711,7 +1704,7 @@ input::selection {
   border-radius: 0px;
   border-top-right-radius: inherit;
   border-bottom-right-radius: inherit;
-  box-shadow: none;
+  box-shadow: 1px 0px 0px 0px transparent inset;
 }
 
 .ui.labeled.icon.buttons > .button > .icon:before,
@@ -1733,31 +1726,31 @@ input::selection {
 }
 
 .ui.labeled.icon.buttons .button:first-child > .icon {
-  border-top-left-radius: 500rem;
-  border-bottom-left-radius: 500rem;
+  border-top-left-radius: 0.30769231rem;
+  border-bottom-left-radius: 0.30769231rem;
 }
 
 .ui.labeled.icon.buttons .button:last-child > .icon {
-  border-top-right-radius: 500rem;
-  border-bottom-right-radius: 500rem;
+  border-top-right-radius: 0.30769231rem;
+  border-bottom-right-radius: 0.30769231rem;
 }
 
 .ui.vertical.labeled.icon.buttons .button:first-child > .icon {
   border-radius: 0em;
-  border-top-left-radius: 500rem;
+  border-top-left-radius: 0.30769231rem;
 }
 
 .ui.vertical.labeled.icon.buttons .button:last-child > .icon {
   border-radius: 0em;
-  border-bottom-left-radius: 500rem;
+  border-bottom-left-radius: 0.30769231rem;
 }
 
 /* Fluid Labeled */
 
 .ui.fluid[class*="left labeled"].icon.button,
 .ui.fluid[class*="right labeled"].icon.button {
-  padding-left: 3em !important;
-  padding-right: 3em !important;
+  padding-left: 1.5em !important;
+  padding-right: 1.5em !important;
 }
 
 /*--------------
@@ -1801,7 +1794,7 @@ input::selection {
 .ui.buttons .or {
   position: relative;
   width: 0.3em;
-  height: 3.5em;
+  height: 2.69230769em;
   z-index: 3;
 }
 
@@ -1814,11 +1807,11 @@ input::selection {
   left: 50%;
   background-color: #FFFFFF;
   text-shadow: none;
-  margin-top: -1.125em;
-  margin-left: -1.125em;
-  width: 2.25em;
-  height: 2.25em;
-  line-height: 2.25em;
+  margin-top: -0.92307692em;
+  margin-left: -0.92307692em;
+  width: 1.84615385em;
+  height: 1.84615385em;
+  line-height: 1.84615385em;
   color: rgba(0, 0, 0, 0.4);
   font-style: normal;
   font-weight: bold;
@@ -1850,17 +1843,17 @@ input::selection {
   display: block;
   margin: 0em;
   border-radius: 0em;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) !important;
 }
 
 /* Top / Bottom */
 
 .ui.attached.top.button {
-  border-radius: 500rem 500rem 0em 0em;
+  border-radius: 0.30769231rem 0.30769231rem 0em 0em;
 }
 
 .ui.attached.bottom.button {
-  border-radius: 0em 0em 500rem 500rem;
+  border-radius: 0em 0em 0.30769231rem 0.30769231rem;
 }
 
 /* Left / Right */
@@ -1870,14 +1863,14 @@ input::selection {
   border-left: none;
   text-align: right;
   padding-right: 0.75em;
-  border-radius: 500rem 0em 0em 500rem;
+  border-radius: 0.30769231rem 0em 0em 0.30769231rem;
 }
 
 .ui.right.attached.button {
   display: inline-block;
   text-align: left;
   padding-left: 0.75em;
-  border-radius: 0em 500rem 500rem 0em;
+  border-radius: 0em 0.30769231rem 0.30769231rem 0em;
 }
 
 /* Plural */
@@ -1911,28 +1904,28 @@ input::selection {
 
 .ui[class*="top attached"].buttons {
   margin-bottom: -1px;
-  border-radius: 500rem 500rem 0em 0em;
+  border-radius: 0.30769231rem 0.30769231rem 0em 0em;
 }
 
 .ui[class*="top attached"].buttons .button:first-child {
-  border-radius: 500rem 0em 0em 0em;
+  border-radius: 0.30769231rem 0em 0em 0em;
 }
 
 .ui[class*="top attached"].buttons .button:last-child {
-  border-radius: 0em 500rem 0em 0em;
+  border-radius: 0em 0.30769231rem 0em 0em;
 }
 
 .ui[class*="bottom attached"].buttons {
   margin-top: -1px;
-  border-radius: 0em 0em 500rem 500rem;
+  border-radius: 0em 0em 0.30769231rem 0.30769231rem;
 }
 
 .ui[class*="bottom attached"].buttons .button:first-child {
-  border-radius: 0em 0em 0em 500rem;
+  border-radius: 0em 0em 0em 0.30769231rem;
 }
 
 .ui[class*="bottom attached"].buttons .button:last-child {
-  border-radius: 0em 0em 500rem 0em;
+  border-radius: 0em 0em 0.30769231rem 0em;
 }
 
 /* Left / Right */
@@ -1944,17 +1937,17 @@ input::selection {
   display: inline-flex;
   margin-right: 0em;
   margin-left: -1px;
-  border-radius: 0em 500rem 500rem 0em;
+  border-radius: 0em 0.30769231rem 0.30769231rem 0em;
 }
 
 .ui[class*="left attached"].buttons .button:first-child {
   margin-left: -1px;
-  border-radius: 0em 500rem 0em 0em;
+  border-radius: 0em 0.30769231rem 0em 0em;
 }
 
 .ui[class*="left attached"].buttons .button:last-child {
   margin-left: -1px;
-  border-radius: 0em 0em 500rem 0em;
+  border-radius: 0em 0em 0.30769231rem 0em;
 }
 
 .ui[class*="right attached"].buttons {
@@ -1964,17 +1957,17 @@ input::selection {
   display: inline-flex;
   margin-left: 0em;
   margin-right: -1px;
-  border-radius: 500rem 0em 0em 500rem;
+  border-radius: 0.30769231rem 0em 0em 0.30769231rem;
 }
 
 .ui[class*="right attached"].buttons .button:first-child {
   margin-left: -1px;
-  border-radius: 500rem 0em 0em 0em;
+  border-radius: 0.30769231rem 0em 0em 0em;
 }
 
 .ui[class*="right attached"].buttons .button:last-child {
   margin-left: -1px;
-  border-radius: 0em 0em 0em 500rem;
+  border-radius: 0em 0em 0em 0.30769231rem;
 }
 
 /*-------------------
@@ -2144,8 +2137,7 @@ input::selection {
   background-color: #445978;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.black.button {
@@ -2268,7 +2260,7 @@ input::selection {
 .ui.inverted.black.buttons .basic.button,
 .ui.inverted.black.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -2307,8 +2299,7 @@ input::selection {
   background-color: #FAFAFA;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.grey.button {
@@ -2431,7 +2422,7 @@ input::selection {
 .ui.inverted.grey.buttons .basic.button,
 .ui.inverted.grey.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -2470,8 +2461,7 @@ input::selection {
   background-color: #A5673F;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.brown.button {
@@ -2594,7 +2584,7 @@ input::selection {
 .ui.inverted.brown.buttons .basic.button,
 .ui.inverted.brown.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -2633,8 +2623,7 @@ input::selection {
   background-color: #445978;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.blue.button {
@@ -2757,7 +2746,7 @@ input::selection {
 .ui.inverted.blue.buttons .basic.button,
 .ui.inverted.blue.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -2796,8 +2785,7 @@ input::selection {
   background-color: #21BA45;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.green.button {
@@ -2920,7 +2908,7 @@ input::selection {
 .ui.inverted.green.buttons .basic.button,
 .ui.inverted.green.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -2959,8 +2947,7 @@ input::selection {
   background-color: #F68E1F;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.orange.button {
@@ -3083,7 +3070,7 @@ input::selection {
 .ui.inverted.orange.buttons .basic.button,
 .ui.inverted.orange.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -3122,8 +3109,7 @@ input::selection {
   background-color: #E03997;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.pink.button {
@@ -3246,7 +3232,7 @@ input::selection {
 .ui.inverted.pink.buttons .basic.button,
 .ui.inverted.pink.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -3285,8 +3271,7 @@ input::selection {
   background-color: #6435C9;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.violet.button {
@@ -3409,7 +3394,7 @@ input::selection {
 .ui.inverted.violet.buttons .basic.button,
 .ui.inverted.violet.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -3448,8 +3433,7 @@ input::selection {
   background-color: #A333C8;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.purple.button {
@@ -3572,7 +3556,7 @@ input::selection {
 .ui.inverted.purple.buttons .basic.button,
 .ui.inverted.purple.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -3611,8 +3595,7 @@ input::selection {
   background-color: #FF8383;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.red.button {
@@ -3735,7 +3718,7 @@ input::selection {
 .ui.inverted.red.buttons .basic.button,
 .ui.inverted.red.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -3774,8 +3757,7 @@ input::selection {
   background-color: #00B5AD;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.teal.button {
@@ -3898,7 +3880,7 @@ input::selection {
 .ui.inverted.teal.buttons .basic.button,
 .ui.inverted.teal.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -3937,8 +3919,7 @@ input::selection {
   background-color: #B5CC18;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.olive.button {
@@ -4061,7 +4042,7 @@ input::selection {
 .ui.inverted.olive.buttons .basic.button,
 .ui.inverted.olive.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -4100,8 +4081,7 @@ input::selection {
   background-color: #FBBD08;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.yellow.button {
@@ -4224,7 +4204,7 @@ input::selection {
 .ui.inverted.yellow.buttons .basic.button,
 .ui.inverted.yellow.basic.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
   color: #FFFFFF !important;
 }
 
@@ -4265,8 +4245,7 @@ input::selection {
   background-color: #445978;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.primary.button {
@@ -4310,8 +4289,7 @@ input::selection {
   background-color: #F68E1F;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.secondary.button {
@@ -4355,8 +4333,7 @@ input::selection {
   background-color: #21BA45 !important;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.positive.button {
@@ -4401,8 +4378,7 @@ input::selection {
   background-color: #FF8383 !important;
   color: #FFFFFF;
   text-shadow: none;
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+  background-image: none;
 }
 
 .ui.negative.button {
@@ -4485,19 +4461,19 @@ input::selection {
 
 .ui.buttons > .ui.button:not(.basic):not(.inverted),
 .ui.buttons:not(.basic):not(.inverted) > .button {
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.buttons .button:first-child {
   border-left: none;
   margin-left: 0em;
-  border-top-left-radius: 500rem;
-  border-bottom-left-radius: 500rem;
+  border-top-left-radius: 0.30769231rem;
+  border-bottom-left-radius: 0.30769231rem;
 }
 
 .ui.buttons .button:last-child {
-  border-top-right-radius: 500rem;
-  border-bottom-right-radius: 500rem;
+  border-top-right-radius: 0.30769231rem;
+  border-bottom-right-radius: 0.30769231rem;
 }
 
 /* Vertical  Style */
@@ -4519,7 +4495,7 @@ input::selection {
   float: none;
   width: 100%;
   margin: 0px 0px 0px 0px;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
+  box-shadow: none;
 }
 
 .ui.vertical.buttons .button:first-child,
@@ -4528,7 +4504,7 @@ input::selection {
 .ui.vertical.buttons .small.button:first-child,
 .ui.vertical.buttons .massive.button:first-child,
 .ui.vertical.buttons .huge.button:first-child {
-  border-radius: 500rem 500rem 0px 0px;
+  border-radius: 0.30769231rem 0.30769231rem 0px 0px;
 }
 
 .ui.vertical.buttons .button:last-child,
@@ -4539,10 +4515,14 @@ input::selection {
 .ui.vertical.buttons .huge.button:last-child,
 .ui.vertical.buttons .gigantic.button:last-child {
   margin-bottom: 0px;
-  border-radius: 0px 0px 500rem 500rem;
+  border-radius: 0px 0px 0.30769231rem 0.30769231rem;
 }
+
+/*******************************
+         Theme Overrides
+*******************************/
 /*!
- * # Semantic UI 2.1.7 - Container
+ * # Semantic UI 2.1.8 - Container
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -4701,7 +4681,7 @@ input::selection {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Divider
+ * # Semantic UI 2.1.8 - Divider
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -4968,7 +4948,7 @@ input::selection {
   }
 }
 /*!
- * # Semantic UI 2.1.7 - Header
+ * # Semantic UI 2.1.8 - Header
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -4989,7 +4969,7 @@ input::selection {
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
   font-family: 'Museo', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: 100;
   line-height: 1.2857em;
   text-transform: none;
   color: #4D6486;
@@ -5785,7 +5765,7 @@ a.ui.inverted.grey.header:hover {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Input
+ * # Semantic UI 2.1.8 - Input
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -6351,7 +6331,7 @@ a.ui.inverted.grey.header:hover {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Label
+ * # Semantic UI 2.1.8 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -6844,13 +6824,13 @@ a.ui.label:hover:before {
   background-color: #D0D0D0;
   border-color: #D0D0D0;
   background-image: none;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.active.label:before {
   background-color: #D0D0D0;
   background-image: none;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*-------------------
@@ -6862,14 +6842,14 @@ a.ui.active.label:hover {
   background-color: #C8C8C8;
   border-color: #C8C8C8;
   background-image: none;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.labels a.active.label:ActiveHover:before,
 a.ui.active.label:ActiveHover:before {
   background-color: #C8C8C8;
   background-image: none;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*-------------------
@@ -7779,7 +7759,7 @@ a.ui.basic.label:hover {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - List
+ * # Semantic UI 2.1.8 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -8241,7 +8221,7 @@ ol.ui.list ol li,
 
 .ui.link.list .active.item,
 .ui.link.list .active.item a:not(.ui) {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */
@@ -8303,7 +8283,7 @@ ol.ui.list ol li,
 .ui.selection.list .list > .item.active,
 .ui.selection.list > .item.active {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */
@@ -8835,7 +8815,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Loader
+ * # Semantic UI 2.1.8 - Loader
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -9136,7 +9116,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Rail
+ * # Semantic UI 2.1.8 - Rail
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -9267,7 +9247,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Reveal
+ * # Semantic UI 2.1.8 - Reveal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -9588,7 +9568,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Segment
+ * # Semantic UI 2.1.8 - Segment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -10416,7 +10396,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Step
+ * # Semantic UI 2.1.8 - Step
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11098,7 +11078,7 @@ ol.ui.horizontal.list li:before,
   /* '' */
 }
 /*!
- * # Semantic UI 2.1.7 - Form
+ * # Semantic UI 2.1.8 - Form
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11485,7 +11465,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="time"]:focus,
 .ui.form input[type="text"]:focus,
 .ui.form input[type="url"]:focus {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: #85B7D9;
   border-radius: 0.30769231rem;
   background: #FFFFFF;
@@ -11493,7 +11473,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.form textarea:focus {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: #85B7D9;
   border-radius: 0.30769231rem;
   background: #FFFFFF;
@@ -12254,7 +12234,7 @@ ol.ui.horizontal.list li:before,
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Grid
+ * # Semantic UI 2.1.8 - Grid
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -14827,18 +14807,18 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .ui.dropdown .menu > .item:hover {
   background: #EDF2F5 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.menu .ui.dropdown .menu > .selected.item {
   background: #EDF2F5 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.menu .ui.dropdown .menu > .active.item {
   background: #EDF2F5 !important;
   font-weight: bold !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
@@ -14996,7 +14976,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu a.item:hover {
   cursor: pointer;
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -15007,7 +14987,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -15016,7 +14996,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .active.item {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   font-weight: normal;
   box-shadow: none;
 }
@@ -15032,7 +15012,7 @@ ol.ui.horizontal.list li:before,
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
   background-color: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -15201,7 +15181,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -15245,7 +15225,7 @@ Floated Menu / Item
 
 .ui.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-top-width: 1px;
   border-color: transparent;
   font-weight: bold;
@@ -15289,7 +15269,7 @@ Floated Menu / Item
 
 .ui.bottom.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: transparent;
   margin: -1px 0px 0px 0px;
   border-radius: 0px 0px 0.30769231rem 0.30769231rem !important;
@@ -15315,7 +15295,7 @@ Floated Menu / Item
 
 .ui.vertical.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: transparent;
   margin: 0px -1px 0px 0px;
   border-radius: 0.30769231rem 0px 0px 0.30769231rem !important;
@@ -15342,7 +15322,7 @@ Floated Menu / Item
 
 .ui.vertical.right.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: transparent;
   margin: 0px 0px 0px -1px;
   border-radius: 0px 0.30769231rem 0.30769231rem 0px !important;
@@ -15398,7 +15378,7 @@ Floated Menu / Item
   border-top: none;
   padding-top: 0.92307692em;
   background-color: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   box-shadow: none;
 }
 
@@ -15457,7 +15437,7 @@ Floated Menu / Item
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Active */
@@ -15465,7 +15445,7 @@ Floated Menu / Item
 .ui.secondary.menu .active.item {
   box-shadow: none;
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-radius: 0.30769231rem;
 }
 
@@ -15474,7 +15454,7 @@ Floated Menu / Item
 .ui.secondary.menu .active.item:hover {
   box-shadow: none;
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */
@@ -15609,16 +15589,16 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  border-color: #445978;
+  border-color: #F68E1F;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Active Hover */
 
 .ui.secondary.pointing.menu .active.item:hover {
-  border-color: #445978;
-  color: rgba(0, 0, 0, 0.95);
+  border-color: #F68E1F;
+  color: #F68E1F;
 }
 
 /* Active Dropdown */
@@ -15648,7 +15628,7 @@ Floated Menu / Item
 /* Vertical Active */
 
 .ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #445978;
+  border-color: #F68E1F;
 }
 
 /* Inverted */
@@ -15673,7 +15653,7 @@ Floated Menu / Item
 /* Hover */
 
 .ui.secondary.inverted.pointing.menu .item:hover {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Active */
@@ -15791,7 +15771,7 @@ Floated Menu / Item
   border: none;
   box-shadow: none;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--- active hover ---*/
@@ -16757,7 +16737,7 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Message
+ * # Semantic UI 2.1.8 - Message
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17277,7 +17257,7 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Table
+ * # Semantic UI 2.1.8 - Table
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17572,7 +17552,7 @@ Floated Menu / Item
 .ui.definition.table tr td:first-child {
   background: #EDF2F5;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Fix 2nd Column */
@@ -17800,7 +17780,7 @@ Floated Menu / Item
 .ui.selectable.table tbody tr:hover,
 .ui.table tbody tr td.selectable:hover {
   background: #EDF2F5 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.selectable.inverted.table tbody tr:hover,
@@ -18299,7 +18279,7 @@ Floated Menu / Item
 
 .ui.sortable.table thead th.sorted {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.sortable.table thead th.sorted:after {
@@ -18310,7 +18290,7 @@ Floated Menu / Item
 
 .ui.sortable.table thead th.sorted:hover {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */
@@ -18524,7 +18504,7 @@ Floated Menu / Item
   font-size: 1.1em;
 }
 /*!
- * # Semantic UI 2.1.7 - Comment
+ * # Semantic UI 2.1.8 - Comment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -18790,7 +18770,7 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Feed
+ * # Semantic UI 2.1.8 - Feed
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -19082,7 +19062,7 @@ Floated Menu / Item
 .ui.feed > .event > .content .meta a:hover,
 .ui.feed > .event > .content .meta a:hover .icon,
 .ui.feed > .event > .content .meta > .icon:hover {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*******************************
@@ -19105,7 +19085,7 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Item
+ * # Semantic UI 2.1.8 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -19617,7 +19597,7 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Statistic
+ * # Semantic UI 2.1.8 - Statistic
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -20264,7 +20244,7 @@ Floated Menu / Item
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Accordion
+ * # Semantic UI 2.1.8 - Accordion
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -20454,12 +20434,12 @@ Floated Menu / Item
 
 .ui.styled.accordion .active.title {
   background: transparent;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.styled.accordion .accordion .active.title {
   background: transparent;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*******************************
@@ -20525,7 +20505,7 @@ Floated Menu / Item
   content: '\f0da' ;
 }
 /*!
- * # Semantic UI 2.1.7 - Checkbox
+ * # Semantic UI 2.1.8 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -20670,11 +20650,11 @@ Floated Menu / Item
 
 .ui.checkbox .box:active::after,
 .ui.checkbox label:active::after {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.checkbox input:active ~ label {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -20689,11 +20669,11 @@ Floated Menu / Item
 
 .ui.checkbox input:focus ~ .box:after,
 .ui.checkbox input:focus ~ label:after {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 .ui.checkbox input:focus ~ label {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -20709,7 +20689,7 @@ Floated Menu / Item
 .ui.checkbox input:checked ~ .box:after,
 .ui.checkbox input:checked ~ label:after {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -20725,7 +20705,7 @@ Floated Menu / Item
 .ui.checkbox input:indeterminate ~ .box:after,
 .ui.checkbox input:indeterminate ~ label:after {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -20744,7 +20724,7 @@ Floated Menu / Item
 .ui.checkbox input:indeterminate:focus ~ label:after,
 .ui.checkbox input:checked:focus ~ .box:after,
 .ui.checkbox input:checked:focus ~ label:after {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -20857,7 +20837,7 @@ Floated Menu / Item
 
 .ui.radio.checkbox input:focus ~ .box:after,
 .ui.radio.checkbox input:focus ~ label:after {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #F68E1F;
 }
 
 /* Indeterminate */
@@ -20876,7 +20856,7 @@ Floated Menu / Item
 
 .ui.radio.checkbox input:checked ~ .box:after,
 .ui.radio.checkbox input:checked ~ label:after {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #F68E1F;
 }
 
 /* Active Focus */
@@ -20888,7 +20868,7 @@ Floated Menu / Item
 
 .ui.radio.checkbox input:focus:checked ~ .box:after,
 .ui.radio.checkbox input:focus:checked ~ label:after {
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #F68E1F;
 }
 
 /*--------------
@@ -20985,7 +20965,7 @@ Floated Menu / Item
 
 .ui.slider.checkbox input:checked ~ .box,
 .ui.slider.checkbox input:checked ~ label {
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.slider.checkbox input:checked ~ .box:before,
@@ -21002,7 +20982,7 @@ Floated Menu / Item
 
 .ui.slider.checkbox input:focus:checked ~ .box,
 .ui.slider.checkbox input:focus:checked ~ label {
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.slider.checkbox input:focus:checked ~ .box:before,
@@ -21103,7 +21083,7 @@ Floated Menu / Item
 
 .ui.toggle.checkbox input:checked ~ .box,
 .ui.toggle.checkbox input:checked ~ label {
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.toggle.checkbox input:checked ~ .box:before,
@@ -21120,7 +21100,7 @@ Floated Menu / Item
 
 .ui.toggle.checkbox input:focus:checked ~ .box,
 .ui.toggle.checkbox input:focus:checked ~ label {
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 
 .ui.toggle.checkbox input:focus:checked ~ .box:before,
@@ -21188,7 +21168,7 @@ Floated Menu / Item
 .plus:before { content: '\e802'; }
 */
 /*!
- * # Semantic UI 2.1.7 - Dimmer
+ * # Semantic UI 2.1.8 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -21392,7 +21372,7 @@ body.dimmable > .dimmer {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Dropdown
+ * # Semantic UI 2.1.8 - Dropdown
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -22161,7 +22141,7 @@ select.ui.dropdown {
 .ui.dropdown .menu .active.item {
   background: transparent;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   box-shadow: none;
   z-index: 1000;
 }
@@ -22174,7 +22154,7 @@ select.ui.dropdown {
 
 .ui.dropdown .menu > .item:hover {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   z-index: 1001;
 }
 
@@ -22301,7 +22281,7 @@ select.ui.dropdown {
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------------
@@ -22986,7 +22966,7 @@ select.ui.dropdown {
 }
 */
 /*!
- * # Semantic UI 2.1.7 - Video
+ * # Semantic UI 2.1.8 - Video
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -23149,7 +23129,7 @@ select.ui.dropdown {
   padding-bottom: 42.85714286%;
 }
 /*!
- * # Semantic UI 2.1.7 - Modal
+ * # Semantic UI 2.1.8 - Modal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -23704,7 +23684,7 @@ select.ui.dropdown {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Nag
+ * # Semantic UI 2.1.8 - Nag
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -23846,7 +23826,7 @@ a.ui.nag {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Popup
+ * # Semantic UI 2.1.8 - Popup
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -24258,7 +24238,7 @@ a.ui.nag {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Progress Bar
+ * # Semantic UI 2.1.8 - Progress Bar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -24836,7 +24816,7 @@ a.ui.nag {
             Progress
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Rating
+ * # Semantic UI 2.1.8 - Rating
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25112,7 +25092,7 @@ a.ui.nag {
   content: '\f004';
 }
 /*!
- * # Semantic UI 2.1.7 - Search
+ * # Semantic UI 2.1.8 - Search
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25297,7 +25277,7 @@ a.ui.nag {
 .ui.search > .prompt:focus {
   border-color: rgba(34, 36, 38, 0.35);
   background: #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------------
@@ -25543,7 +25523,7 @@ a.ui.nag {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Sidebar
+ * # Semantic UI 2.1.8 - Sidebar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26226,7 +26206,7 @@ html.ios body {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Sticky
+ * # Semantic UI 2.1.8 - Sticky
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26297,7 +26277,7 @@ html.ios body {
          Theme Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Tab
+ * # Semantic UI 2.1.8 - Tab
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26381,7 +26361,7 @@ html.ios body {
          Tab Overrides
 *******************************/
 /*!
- * # Semantic UI 2.1.7 - Transition
+ * # Semantic UI 2.1.8 - Transition
  * http://github.com/semantic-org/semantic-ui/
  *
  *

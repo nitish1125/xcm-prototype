@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Table
+ * # Semantic UI 2.1.8 - Table
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -260,7 +260,7 @@
 .ui.definition.table tr td:first-child {
   background: #EDF2F5;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Fix 2nd Column */
@@ -473,7 +473,7 @@
 .ui.selectable.table tbody tr:hover,
 .ui.table tbody tr td.selectable:hover {
   background: #EDF2F5 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 .ui.selectable.inverted.table tbody tr:hover,
 .ui.inverted.table tbody tr td.selectable:hover {
@@ -893,7 +893,7 @@
 /* Sorted */
 .ui.sortable.table thead th.sorted {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 .ui.sortable.table thead th.sorted:after {
   display: inline-block;
@@ -902,7 +902,7 @@
 /* Sorted Hover */
 .ui.sortable.table thead th.sorted:hover {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */

@@ -265,16 +265,16 @@
 }
 .ui.menu .ui.dropdown .menu > .item:hover {
   background: #EDF2F5 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 .ui.menu .ui.dropdown .menu > .selected.item {
   background: #EDF2F5 !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 .ui.menu .ui.dropdown .menu > .active.item {
   background: #EDF2F5 !important;
   font-weight: bold !important;
-  color: rgba(0, 0, 0, 0.95) !important;
+  color: #F68E1F !important;
 }
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
   display: block;
@@ -421,7 +421,7 @@
 .ui.menu a.item:hover {
   cursor: pointer;
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -432,7 +432,7 @@
 .ui.menu .link.item:active,
 .ui.menu a.item:active {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -441,7 +441,7 @@
 
 .ui.menu .active.item {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   font-weight: normal;
   box-shadow: none;
 }
@@ -456,7 +456,7 @@
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
   background-color: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -612,7 +612,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------
@@ -651,7 +651,7 @@ Floated Menu / Item
 /* Active */
 .ui.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-top-width: 1px;
   border-color: transparent;
   font-weight: bold;
@@ -690,7 +690,7 @@ Floated Menu / Item
 }
 .ui.bottom.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: transparent;
   margin: -1px 0px 0px 0px;
   border-radius: 0px 0px 0.30769231rem 0.30769231rem !important;
@@ -713,7 +713,7 @@ Floated Menu / Item
 }
 .ui.vertical.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: transparent;
   margin: 0px -1px 0px 0px;
   border-radius: 0.30769231rem 0px 0px 0.30769231rem !important;
@@ -737,7 +737,7 @@ Floated Menu / Item
 }
 .ui.vertical.right.tabular.menu .active.item {
   background: none #FFFFFF;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-color: transparent;
   margin: 0px 0px 0px -1px;
   border-radius: 0px 0.30769231rem 0.30769231rem 0px !important;
@@ -786,7 +786,7 @@ Floated Menu / Item
   border-top: none;
   padding-top: 0.92307692em;
   background-color: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   box-shadow: none;
 }
 
@@ -840,14 +840,14 @@ Floated Menu / Item
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Active */
 .ui.secondary.menu .active.item {
   box-shadow: none;
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   border-radius: 0.30769231rem;
 }
 
@@ -855,7 +855,7 @@ Floated Menu / Item
 .ui.secondary.menu .active.item:hover {
   box-shadow: none;
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Inverted */
@@ -972,15 +972,15 @@ Floated Menu / Item
 .ui.secondary.pointing.menu .active.item {
   background-color: transparent;
   box-shadow: none;
-  border-color: #445978;
+  border-color: #F68E1F;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Active Hover */
 .ui.secondary.pointing.menu .active.item:hover {
-  border-color: #445978;
-  color: rgba(0, 0, 0, 0.95);
+  border-color: #F68E1F;
+  color: #F68E1F;
 }
 
 /* Active Dropdown */
@@ -1006,7 +1006,7 @@ Floated Menu / Item
 
 /* Vertical Active */
 .ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #445978;
+  border-color: #F68E1F;
 }
 
 /* Inverted */
@@ -1026,7 +1026,7 @@ Floated Menu / Item
 
 /* Hover */
 .ui.secondary.inverted.pointing.menu .item:hover {
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /* Active */
@@ -1132,7 +1132,7 @@ Floated Menu / Item
   border: none;
   box-shadow: none;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--- active hover ---*/

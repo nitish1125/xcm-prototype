@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.7 - Dropdown
+ * # Semantic UI 2.1.8 - Dropdown
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -714,7 +714,7 @@ select.ui.dropdown {
 .ui.dropdown .menu .active.item {
   background: transparent;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   box-shadow: none;
   z-index: 1000;
 }
@@ -727,7 +727,7 @@ select.ui.dropdown {
 /* Menu Item Hover */
 .ui.dropdown .menu > .item:hover {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
   z-index: 1001;
 }
 
@@ -843,7 +843,7 @@ select.ui.dropdown {
 .ui.dropdown.selected,
 .ui.dropdown .menu .selected.item {
   background: #EDF2F5;
-  color: rgba(0, 0, 0, 0.95);
+  color: #F68E1F;
 }
 
 /*--------------------

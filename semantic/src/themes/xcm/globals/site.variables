@@ -20,7 +20,7 @@
   Page Heading
 ---------------*/
 @h1         : 2.25em;
-@headerFontWeight : normal;
+@headerFontWeight : 100;
 
 /*-------------------
       Site Colors
@@ -66,7 +66,6 @@
 /*-------------------
       Borders
 --------------------*/
-@circularRadius                 : 500rem;
 @solidWhiteBorderColor          : transparent;
 @solidBorderColor               : transparent;
 /*-------------------
@@ -81,4 +80,5 @@
 --------------------*/
 @mutedTextColor              : #4D6486;
 @invertedLightTextColor      : #fff;
+@selectedTextColor           : @orange;
 

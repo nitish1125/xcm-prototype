@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My View - XCM Solutions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/dist/components/site.css">
+        <link rel="stylesheet" href="/dist/components/reset.css">
+        <link rel="stylesheet" href="/dist/components/transition.css">
+        <link rel="stylesheet" href="/dist/components/segment.css">
+        <link rel="stylesheet" href="/dist/components/menu.css">
+        <link rel="stylesheet" href="/dist/components/form.css">
+        <link rel="stylesheet" href="/dist/components/input.css">
+        <link rel="stylesheet" href="/dist/components/dropdown.css">
+        <link rel="stylesheet" href="/dist/components/search.css">
+        <link rel="stylesheet" href="/dist/components/button.css">
+        <link rel="stylesheet" href="/dist/components/grid.css">
+        <link rel="stylesheet" href="/dist/semantic.css">
+        <link rel="stylesheet" href="/dist/components/list.css">
+        <link rel="stylesheet" href="/dist/components/item.css">
+        <link rel="stylesheet" href="/dist/components/statistic.css">
+        <link rel="stylesheet" href="/dist/components/container.css">
+        <link rel="stylesheet" href="/dist/components/divider.min.css">
+        <link rel="stylesheet" href="/bower_components/handsontable/dist/handsontable.full.css">
+        <link rel="stylesheet" href="/dist/semantic.min.css">
+        <link rel="stylesheet" href="/dist/css/sprite.css">
+    </head>
+
+    <body>
+        
+        <div class="ui fluid container">
+            <div class="ui inverted blue secondary pointing menu">
+                <div class="item">
+                    XCM
+                </div>
+                <a class="active item">
+                    My View
+                </a>
+                <a class="item">
+                    Dashboard
+                </a>
+                <a class="item">
+                    Reports
+                </a>
+                <div class="right menu">
+                    <div class="item ui search">
+                        <div class="ui icon input">
+                            <input class="prompt" placeholder="Search Here..." type="text">
+                            <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
+                    </div>
+                    <a  href="#">
+                        <div class="svg-add_details svg-add_details-dims">
+
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="svg-cog_wheel svg-cog_wheel-dims">
+
+                        </div>
+                    </a>
+                    <a class="item">
+                        Utilities
+                    </a>
+                    <div class="ui pointing dropdown link item">
+                        <span class="text">John Doe</span>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">My Profile</div>
+                            <div class="item">Logout</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jurisdiction-info">
+            <div class="ui attached segment">
+                <div class="ui grid">
+                    
+                    <div class="right floated right aligned ten wide column">
+                        <div class="ui divided horizontal link list">
+                            <a class="item">Tips</a>
+                            <a class="item">Video</a>
+                            <a class="item">Help</a>
+                        </div>
+                        <div class="ui horizontal list">
+                            <a class="item bottom aligned" href="#">
+                                <div class="svg-close_window svg-close_window-dims">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui grid">
+                    <div class="left floated left aligned sixteen wide column">
+                        <div class="ui secondary large pointing menu">
+                            <a class="link item">Task information</a>
+                            <a class="link item active">Jurisdictions</a>
+                            <a class="link item">Assembly</a>
+                            <a class="link item">Shipping</a>
+                            <a class="link item">eFile</a>
+                            <a class="link item">SignOff</a>
+                            <a class="link item">Engagement</a>
+                            <a class="link item">Extension</a>
+                            <div class="item right floated">Current status: Recurring</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui tab active">
+                    <div class="ui attached segment">
+                        <div class="ui grid">
+                            <div class="left aligned eight wide column">
+                                <div class="ui label">Jurisdiction Counts: 
+                                    <span id="spanjurisdictionCount">6</span>
+                                </div>
+                            </div>
+                            <div class="right aligned eight wide column">
+                                <div class="ui mini blue button">&#43;   Add Jurisdiction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui grid">
+                    <div class="row">
+                        <div class="wide column">
+                            <div id="example" style="width:100%;height:100%;overflow:hidden;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>    
+
+        
+
+
+
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/dist/components/dropdown.js"></script>
+        <script src="/dist/components/transition.js"></script>
+        <script src="/dist/components/search.js"></script>
+        <script src="/bower_components/handsontable/dist/handsontable.full.min.js"></script>
+        <script src="/bower_components/handsontable/dist/moment/moment.js"></script>
+        <script src="/bower_components/handsontable/dist/pikaday/pikaday.js"></script>
+        <script src="/dist/semantic.min.js"></script>
+        <script>
+        $(function () { 
+
+            $('.ui.dropdown').dropdown({
+              on: 'hover'
+              
+            });
+
+            var example1 = document.getElementById('example'),
+                    settings,
+                    hot;
+                    coloumnHeaders = [  {'col': ''},
+                                        {'col': 'Client Name' },
+                                        {'col' : 'Account Number'},
+                                        {'col' : 'Client Type'},
+                                        {'col': 'Fiscal Year'},
+                                        {'col': 'Group Name'},
+                                        {'col': 'Group #'},
+                                        {'col':'Primary Task Type'},
+                                        {'col':'Originating Location'},
+                                        {'col': 'Client Status'},   
+                                        {'col':'Pts'},
+                                        {'col':'Cks'},
+                                        {'col': 'DTL'},     
+                                        {'col': 'D'},   
+                    ],
+                    data = [
+                            ["","2's, A Stitch In Time's ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street", '', 'Entity', '07/05', '','Upper,4111', '1120', 'BOS', 'Active','2','3','D','0'],
+                            ["","a,Glenn ", '892357896', 'Individual', '', "ABC Fund Group","Upper, 3&'-, inc's & :", '1040', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                            ["","200 Street ", '012008999.0', 'Individual', '07/05', 'ABC Fund Group','Upper', '1120S', 'BOS', 'Active','2','3','D','0'],
+                       
+                    ],
+
+                     columns= [
+                              {
+                                type: 'checkbox',
+                                data: function  (data, value) {
+                                    if(value === undefined) {
+                                        return false; 
+                                    } else {
+                                        return value;
+                                    }
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[1];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[2];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[3];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[4];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[5];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[6];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[7];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[8];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[9];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[10];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[11];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[12];
+                                }
+                              },
+                              {
+                                type: 'text',
+                                data: function (d) {
+                                    return d[13];
+                                }
+                              }
+                            ]
+                     ,
+
+                  hot = new Handsontable(example1, {
+                    data: data,
+                    rowHeaders: true,
+                    fixedColumnsLeft: 2,
+                    contextMenu: true,
+                    manualColumnFreeze: true,
+                    columns:columns,
+                    maxRows:data.length,
+                    colHeaders: coloumnHeaders.map(function(item) {
+                        return item['col']}),
+                  });
+        
+
+
+$('.task-info')
+  .popup({
+    popup : $('.custom.popup'),
+    on    : 'hover',
+    hoverable:'true',
+  })
+;
+
+$('.filter-off')
+  .popup({
+    popup : $('.filter.popup'),
+    on    : 'click',
+    position : 'bottom right',
+    setFluidWidth:'true',
+  })
+;
+
+
+        });
+        </script>
+        
+    </body>
+</html>
+
+

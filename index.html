@@ -115,8 +115,8 @@
             </div>
         </div>
 
-        <div class="ui attached segment">
-            <div class="ui grid">
+        <div class="ui padded grid">
+            <div class="row">
                 <div class="left floated left aligned eight wide column">
                     <h2 class="ui header">
                         <div class="content">
@@ -173,10 +173,10 @@
                             </div>
                         </a>
                         <a class="content">
-                            <div class="ui medium blue button">
+                            <button class="ui medium blue button">
                                 <i class="icon plus"></i>   
                                 ADD TASK
-                            </div>
+                            </button>
                         </a>
                     </div>
                     <div class="ui flowing popup form filter">
@@ -262,96 +262,74 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="ui grid">
+
                 <div class="left floated left aligned ten wide column">
                     <div class="ui medium horizontal list">
-                        <div class="item">
-                            <a class="ui image svg-task_info svg-task_info-dims">
-
-                            </a>
-                            <div class="content">
-                                <a class="header task-info">Task Info</a>
-                                <div class="ui custom popup ">
-                                    <div class="ui relaxed grid">
-                                        <div class="column">
-                                            <div class="ui link list" id="taskInfoIndivualLink">
-                                                <a class="item">
-                                                    <h3>Jurisdiction/Deliverables</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Assembly</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Shipping</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>eFile</h3></a> 
-                                                <a class="item">
-                                                    <h3>SignOff - Tasktype</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>SignOff - Category</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Engagement Info</h3>
-                                                </a> 
-                                                <a class="item">
-                                                    <h3>Extension</h3>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <a class="item">
+                            <span class="ui image svg-task_info svg-task_info-dims">
+                            </span>
+                            <h3 class="content task-info">Task Info</h3>
+                            <div class="ui custom popup ">
+                                <div class="ui link list" id="taskInfoIndivualLink">
+                                    <a class="item">
+                                        <h3>Jurisdiction/Deliverables</h3>
+                                    </a> 
+                                    <a class="item">
+                                        <h3>Assembly</h3>
+                                    </a> 
+                                    <a class="item">
+                                        <h3>Shipping</h3>
+                                    </a> 
+                                    <a class="item">
+                                        <h3>eFile</h3></a> 
+                                    <a class="item">
+                                        <h3>SignOff - Tasktype</h3>
+                                    </a> 
+                                    <a class="item">
+                                        <h3>SignOff - Category</h3>
+                                    </a> 
+                                    <a class="item">
+                                        <h3>Engagement Info</h3>
+                                    </a> 
+                                    <a class="item">
+                                        <h3>Extension</h3>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="item">
-                            <a class="ui image svg-task_issues svg-task_issues-dims">
-
-                            </a>
-                            <div class="content">
-                            <a class="header">Move Info</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="ui image svg-move_task svg-move_task-dims">
-
-                            </a>
-                            <div class="content">
-                            <a class="header">Add Issues</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="ui image svg-create_extensions svg-create_extensions-dims">
-
-                            </a>
-                            <div class="content">
-                            <a class="header">Create Extensions</a>
-                            </div>
-                        </div>
+                        </a>
+                        <a class="item">
+                            <span class="ui image svg-task_issues svg-task_issues-dims">
+                            </span>
+                            <h3 class="content ">Move Info</h3>
+                        </a>
+                        <a class="item">
+                            <span class="ui image svg-move_task svg-move_task-dims">
+                            </span>
+                            <h3 class="content ">Add Issues</h3>
+                        </a>
+                        <a class="item">
+                            <span class="ui image svg-create_extensions svg-create_extensions-dims">
+                            </span>
+                            <h3 class="content ">Create Extensions</h3>
+                        </a>
                     </div>
                 </div>
 
                 <div class="right floated right aligned five wide column">
                     <div class="ui small horizontal list">
-                        <div class="item">
-                            <div class="content">
-                            <a class="header">1 selected</a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a class="ui image svg-sort svg-sort-dims">
 
-                            </a>
-                        </div>
+                        <a class="item">
+                            <h4 class="content ">1 selected</h4>
+                        </a>
+                        <a class="item">
+                            <span class="ui image image svg-sort svg-sort-dims">
+                            </span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="ui grid">
-                <div class="row">
-                    <div class="wide column">
-                        <div id="example" style="width:100%;height:100%;overflow:hidden;"></div>
-                    </div>
+            
+                <div class="ui sixteen wide column">
+                    <div id="example" style="width:100%;height:100%;overflow:hidden;"></div>
                 </div>
             </div>
         </div>

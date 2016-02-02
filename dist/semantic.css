@@ -1015,12 +1015,13 @@ input::selection {
 .ui.vertical.animated.button .visible.content,
 .ui.vertical.animated.button .hidden.content {
   -webkit-transition: top 0.3s ease, -webkit-transform 0.3s ease;
+  transition: top 0.3s ease, -webkit-transform 0.3s ease;
   transition: top 0.3s ease, transform 0.3s ease;
+  transition: top 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .ui.vertical.animated.button .visible.content {
   -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
   transform: translateY(0%);
   right: auto;
 }
@@ -1034,7 +1035,6 @@ input::selection {
 .ui.vertical.animated.button:focus .visible.content,
 .ui.vertical.animated.button:hover .visible.content {
   -webkit-transform: translateY(200%);
-  -ms-transform: translateY(200%);
   transform: translateY(200%);
   right: auto;
 }
@@ -1050,7 +1050,9 @@ input::selection {
 .ui.fade.animated.button .visible.content,
 .ui.fade.animated.button .hidden.content {
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .ui.fade.animated.button .visible.content {
@@ -1058,7 +1060,6 @@ input::selection {
   right: auto;
   opacity: 1;
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
 }
 
@@ -1067,7 +1068,6 @@ input::selection {
   left: 0%;
   right: auto;
   -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
   transform: scale(1.5);
 }
 
@@ -1077,7 +1077,6 @@ input::selection {
   right: auto;
   opacity: 0;
   -webkit-transform: scale(0.75);
-  -ms-transform: scale(0.75);
   transform: scale(0.75);
 }
 
@@ -1087,7 +1086,6 @@ input::selection {
   right: auto;
   opacity: 1;
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
 }
 
@@ -1717,7 +1715,6 @@ input::selection {
   top: 50%;
   text-align: center;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -4778,7 +4775,6 @@ input::selection {
   line-height: 0em;
   text-align: center;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
@@ -4819,7 +4815,6 @@ input::selection {
     top: 0;
     left: 0;
     -webkit-transform: none;
-    -ms-transform: none;
     transform: none;
   }
 
@@ -6350,7 +6345,7 @@ a.ui.inverted.grey.header:hover {
   line-height: 1;
   vertical-align: baseline;
   margin: 0em 0.15384615em;
-  background-color: #E8E8E8;
+  background-color: aliceblue;
   background-image: none;
   padding: 0.5833em 0.833em;
   color: #4D6486;
@@ -6494,7 +6489,7 @@ a.ui.label {
   max-width: 9999px;
   vertical-align: baseline;
   text-transform: none;
-  background: #E8E8E8;
+  background: aliceblue;
   padding: 0.5833em 0.833em 0.5833em 0.5em;
   border-radius: 0.30769231rem;
   box-shadow: none;
@@ -6534,7 +6529,6 @@ a.ui.label {
 .ui.tag.label:before {
   position: absolute;
   -webkit-transform: translateY(-50%) translateX(50%) rotate(-45deg);
-  -ms-transform: translateY(-50%) translateX(50%) rotate(-45deg);
   transform: translateY(-50%) translateX(50%) rotate(-45deg);
   top: 50%;
   right: 100%;
@@ -6572,7 +6566,7 @@ a.ui.label {
   margin: 0em;
   padding: 0em;
   text-align: center;
-  border-color: #E8E8E8;
+  border-color: aliceblue;
   width: 4em;
   height: 4em;
   z-index: 1;
@@ -6693,7 +6687,6 @@ a.ui.label {
 .ui[class*="right ribbon"].label {
   text-align: left;
   -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   border-radius: 0.30769231rem 0em 0em 0.30769231rem;
 }
@@ -7584,7 +7577,6 @@ a.ui.basic.label:hover {
   position: absolute;
   content: '';
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   background-image: none;
   z-index: 2;
@@ -7605,7 +7597,6 @@ a.ui.basic.label:hover {
 .ui[class*="pointing above"].label:before {
   border-width: 1px 0px 0px 1px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 0%;
   left: 50%;
@@ -7625,7 +7616,6 @@ a.ui.basic.label:hover {
   top: auto;
   right: auto;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   top: 100%;
   left: 50%;
@@ -7641,7 +7631,6 @@ a.ui.basic.label:hover {
 .ui[class*="left pointing"].label:before {
   border-width: 0px 0px 1px 1px;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   bottom: auto;
   right: auto;
@@ -7659,7 +7648,6 @@ a.ui.basic.label:hover {
 .ui[class*="right pointing"].label:before {
   border-width: 1px 1px 0px 0px;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
   transform: translateX(50%) translateY(-50%) rotate(45deg);
   top: 50%;
   right: 0%;
@@ -8840,7 +8828,6 @@ ol.ui.horizontal.list li:before,
   text-align: center;
   z-index: 1000;
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -9094,7 +9081,6 @@ ol.ui.horizontal.list li:before,
   left: 0em;
   top: 0em;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
 }
 
@@ -9308,7 +9294,9 @@ ol.ui.horizontal.list li:before,
   float: left;
   margin: 0em;
   -webkit-transition: -webkit-transform 0.5s ease 0.1s;
+  transition: -webkit-transform 0.5s ease 0.1s;
   transition: transform 0.5s ease 0.1s;
+  transition: transform 0.5s ease 0.1s, -webkit-transform 0.5s ease 0.1s;
 }
 
 .ui.slide.reveal > .visible.content {
@@ -9320,87 +9308,74 @@ ol.ui.horizontal.list li:before,
   left: 0% !important;
   width: 100% !important;
   -webkit-transform: translateX(100%) !important;
-  -ms-transform: translateX(100%) !important;
   transform: translateX(100%) !important;
 }
 
 .ui.slide.active.reveal > .visible.content,
 .ui.slide.reveal:hover > .visible.content {
   -webkit-transform: translateX(-100%) !important;
-  -ms-transform: translateX(-100%) !important;
   transform: translateX(-100%) !important;
 }
 
 .ui.slide.active.reveal > .hidden.content,
 .ui.slide.reveal:hover > .hidden.content {
   -webkit-transform: translateX(0%) !important;
-  -ms-transform: translateX(0%) !important;
   transform: translateX(0%) !important;
 }
 
 .ui.slide.right.reveal > .visible.content {
   -webkit-transform: translateX(0%) !important;
-  -ms-transform: translateX(0%) !important;
   transform: translateX(0%) !important;
 }
 
 .ui.slide.right.reveal > .hidden.content {
   -webkit-transform: translateX(-100%) !important;
-  -ms-transform: translateX(-100%) !important;
   transform: translateX(-100%) !important;
 }
 
 .ui.slide.right.active.reveal > .visible.content,
 .ui.slide.right.reveal:hover > .visible.content {
   -webkit-transform: translateX(100%) !important;
-  -ms-transform: translateX(100%) !important;
   transform: translateX(100%) !important;
 }
 
 .ui.slide.right.active.reveal > .hidden.content,
 .ui.slide.right.reveal:hover > .hidden.content {
   -webkit-transform: translateX(0%) !important;
-  -ms-transform: translateX(0%) !important;
   transform: translateX(0%) !important;
 }
 
 .ui.slide.up.reveal > .hidden.content {
   -webkit-transform: translateY(100%) !important;
-  -ms-transform: translateY(100%) !important;
   transform: translateY(100%) !important;
 }
 
 .ui.slide.up.active.reveal > .visible.content,
 .ui.slide.up.reveal:hover > .visible.content {
   -webkit-transform: translateY(-100%) !important;
-  -ms-transform: translateY(-100%) !important;
   transform: translateY(-100%) !important;
 }
 
 .ui.slide.up.active.reveal > .hidden.content,
 .ui.slide.up.reveal:hover > .hidden.content {
   -webkit-transform: translateY(0%) !important;
-  -ms-transform: translateY(0%) !important;
   transform: translateY(0%) !important;
 }
 
 .ui.slide.down.reveal > .hidden.content {
   -webkit-transform: translateY(-100%) !important;
-  -ms-transform: translateY(-100%) !important;
   transform: translateY(-100%) !important;
 }
 
 .ui.slide.down.active.reveal > .visible.content,
 .ui.slide.down.reveal:hover > .visible.content {
   -webkit-transform: translateY(100%) !important;
-  -ms-transform: translateY(100%) !important;
   transform: translateY(100%) !important;
 }
 
 .ui.slide.down.active.reveal > .hidden.content,
 .ui.slide.down.reveal:hover > .hidden.content {
   -webkit-transform: translateY(0%) !important;
-  -ms-transform: translateY(0%) !important;
   transform: translateY(0%) !important;
 }
 
@@ -9432,7 +9407,9 @@ ol.ui.horizontal.list li:before,
   float: left;
   margin: 0em;
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1) 0.1s;
+  transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1) 0.1s;
   transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1) 0.1s;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1) 0.1s;
 }
 
 .ui.move.reveal > .visible.content {
@@ -9448,28 +9425,24 @@ ol.ui.horizontal.list li:before,
 .ui.move.active.reveal > .visible.content,
 .ui.move.reveal:hover > .visible.content {
   -webkit-transform: translateX(-100%) !important;
-  -ms-transform: translateX(-100%) !important;
   transform: translateX(-100%) !important;
 }
 
 .ui.move.right.active.reveal > .visible.content,
 .ui.move.right.reveal:hover > .visible.content {
   -webkit-transform: translateX(100%) !important;
-  -ms-transform: translateX(100%) !important;
   transform: translateX(100%) !important;
 }
 
 .ui.move.up.active.reveal > .visible.content,
 .ui.move.up.reveal:hover > .visible.content {
   -webkit-transform: translateY(-100%) !important;
-  -ms-transform: translateY(-100%) !important;
   transform: translateY(-100%) !important;
 }
 
 .ui.move.down.active.reveal > .visible.content,
 .ui.move.down.reveal:hover > .visible.content {
   -webkit-transform: translateY(100%) !important;
-  -ms-transform: translateY(100%) !important;
   transform: translateY(100%) !important;
 }
 
@@ -9481,14 +9454,12 @@ ol.ui.horizontal.list li:before,
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .ui.rotate.reveal > .visible.content,
 .ui.rotate.right.reveal > .visible.content {
   -webkit-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
   transform-origin: bottom right;
 }
 
@@ -9497,20 +9468,17 @@ ol.ui.horizontal.list li:before,
 .ui.rotate.right.active.reveal > .visible.content,
 .ui.rotate.right.reveal:hover > .visible.content {
   -webkit-transform: rotate(110deg);
-  -ms-transform: rotate(110deg);
   transform: rotate(110deg);
 }
 
 .ui.rotate.left.reveal > .visible.content {
   -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
   transform-origin: bottom left;
 }
 
 .ui.rotate.left.active.reveal > .visible.content,
 .ui.rotate.left.reveal:hover > .visible.content {
   -webkit-transform: rotate(-110deg);
-  -ms-transform: rotate(-110deg);
   transform: rotate(-110deg);
 }
 
@@ -9527,7 +9495,6 @@ ol.ui.horizontal.list li:before,
   right: auto !important;
   bottom: auto !important;
   -webkit-transform: none !important;
-  -ms-transform: none !important;
   transform: none !important;
 }
 
@@ -9717,7 +9684,6 @@ ol.ui.horizontal.list li:before,
 .ui.piled.segments:before,
 .ui.piled.segment:before {
   -webkit-transform: rotate(-1.2deg);
-  -ms-transform: rotate(-1.2deg);
   transform: rotate(-1.2deg);
   top: 0;
   z-index: -2;
@@ -9726,7 +9692,6 @@ ol.ui.horizontal.list li:before,
 .ui.piled.segments:after,
 .ui.piled.segment:after {
   -webkit-transform: rotate(1.2deg);
-  -ms-transform: rotate(1.2deg);
   transform: rotate(1.2deg);
   top: 0;
   z-index: -1;
@@ -10506,7 +10471,6 @@ ol.ui.horizontal.list li:before,
   -webkit-transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
   transition: background-color 0.1s ease, opacity 0.1s ease, color 0.1s ease, box-shadow 0.1s ease;
   -webkit-transform: translateY(-50%) translateX(50%) rotate(-45deg);
-  -ms-transform: translateY(-50%) translateX(50%) rotate(-45deg);
   transform: translateY(-50%) translateX(50%) rotate(-45deg);
 }
 
@@ -12126,6 +12090,7 @@ ol.ui.horizontal.list li:before,
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
 }
 
@@ -16542,7 +16507,6 @@ Floated Menu / Item
   top: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   background: none;
   margin: 0.5px 0em 0em;
@@ -16563,7 +16527,6 @@ Floated Menu / Item
   bottom: auto;
   left: auto;
   -webkit-transform: translateX(50%) translateY(-50%) rotate(45deg);
-  -ms-transform: translateX(50%) translateY(-50%) rotate(45deg);
   transform: translateX(50%) translateY(-50%) rotate(45deg);
   margin: 0em -0.5px 0em 0em;
   border: none;
@@ -19904,6 +19867,7 @@ Floated Menu / Item
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
 }
 
@@ -19926,6 +19890,7 @@ Floated Menu / Item
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
+  -ms-grid-row-align: center;
   align-items: center;
   max-width: none;
   margin: 1em 0em;
@@ -20315,11 +20280,12 @@ Floated Menu / Item
   margin: 0em 0.25rem 0em 0rem;
   padding: 0em;
   font-size: 1em;
-  -webkit-transition: -webkit-transform 0.1s ease, opacity 0.1s ease;
+  -webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
+  transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
   transition: transform 0.1s ease, opacity 0.1s ease;
+  transition: transform 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease;
   vertical-align: baseline;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
 }
 
@@ -20338,7 +20304,6 @@ Floated Menu / Item
   float: right;
   margin: 0.21425em 0em 0em 1em;
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -20356,13 +20321,11 @@ Floated Menu / Item
 .ui.accordion .active.title .dropdown.icon,
 .ui.accordion .accordion .active.title .dropdown.icon {
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .ui.accordion.menu .item .active.title > .dropdown.icon {
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -20576,8 +20539,10 @@ Floated Menu / Item
   content: '';
   background: #FFFFFF;
   border-radius: 0.23076923rem;
-  -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, box-shadow 0.1s ease;
+  -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   border: 1px solid transparent;
 }
 
@@ -20596,8 +20561,10 @@ Floated Menu / Item
   text-align: center;
   opacity: 0;
   color: #4D6486;
-  -webkit-transition: border 0.1s ease, opacity 0.1s ease, -webkit-transform 0.1s ease, box-shadow 0.1s ease;
+  -webkit-transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
   transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease;
+  transition: border 0.1s ease, opacity 0.1s ease, transform 0.1s ease, box-shadow 0.1s ease, -webkit-transform 0.1s ease;
 }
 
 /*--------------
@@ -20793,7 +20760,6 @@ Floated Menu / Item
 .ui.radio.checkbox label:before {
   content: '';
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   width: 15px;
   height: 15px;
@@ -20823,7 +20789,6 @@ Floated Menu / Item
   height: 15px;
   border-radius: 500rem;
   -webkit-transform: scale(0.46666667);
-  -ms-transform: scale(0.46666667);
   transform: scale(0.46666667);
   background-color: #4D6486;
 }
@@ -20910,7 +20875,6 @@ Floated Menu / Item
   width: 3.5rem;
   height: 0.23076923rem;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   border-radius: 500rem;
   -webkit-transition: background 0.3s ease;
@@ -20934,7 +20898,6 @@ Floated Menu / Item
   top: -0.25rem;
   left: 0em;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   border-radius: 500rem;
   -webkit-transition: left 0.3s ease;
@@ -21027,7 +20990,6 @@ Floated Menu / Item
   content: '';
   z-index: 1;
   -webkit-transform: none;
-  -ms-transform: none;
   transform: none;
   border: none;
   top: 0rem;
@@ -21272,7 +21234,6 @@ Floated Menu / Item
   -webkit-perspective: 2000px;
   perspective: 2000px;
   -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
   transform-origin: center center;
 }
 
@@ -21292,8 +21253,8 @@ body.dimmable > .dimmer {
 .blurring.dimmable > :not(.dimmer) {
   -webkit-filter: blur(0px) grayscale(0);
   filter: blur(0px) grayscale(0);
-  -webkit-transition: 800ms -webkit-filter ease, 800ms filter ease;
-  transition: 800ms -webkit-filter ease, 800ms filter ease;
+  -webkit-transition: 800ms filter ease;
+  transition: 800ms filter ease;
 }
 
 .blurring.dimmed.dimmable > :not(.dimmer) {
@@ -22667,7 +22628,6 @@ select.ui.dropdown {
   content: '';
   visibility: visible;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   width: 0.53846154em;
   height: 0.53846154em;
@@ -22706,7 +22666,6 @@ select.ui.dropdown {
   right: auto;
   margin: 0em;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -22726,7 +22685,6 @@ select.ui.dropdown {
   right: 1em;
   margin: 0em;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -22744,7 +22702,6 @@ select.ui.dropdown {
   left: -0.26923077em;
   margin: 0em 0em 0em 0em;
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -22763,7 +22720,6 @@ select.ui.dropdown {
   right: -0.26923077em;
   margin: 0em 0em 0em 0em;
   -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
@@ -22783,7 +22739,6 @@ select.ui.dropdown {
   right: auto;
   margin: 0em;
   -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
 
@@ -23064,7 +23019,6 @@ select.ui.dropdown {
   left: 50%;
   z-index: 4;
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   color: #FFFFFF;
   font-size: 6rem;
@@ -23154,7 +23108,6 @@ select.ui.dropdown {
   border: none;
   box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2), 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform-origin: 50% 25%;
-  -ms-transform-origin: 50% 25%;
   transform-origin: 50% 25%;
   border-radius: 0.30769231rem;
   -webkit-user-select: text;
@@ -23881,7 +23834,6 @@ a.ui.nag {
   height: 0.75em;
   background: #FFFFFF;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   z-index: 2;
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0);
@@ -23907,19 +23859,16 @@ a.ui.nag {
 
 .ui.top.left.popup {
   -webkit-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
   transform-origin: left bottom;
 }
 
 .ui.top.center.popup {
   -webkit-transform-origin: center bottom;
-  -ms-transform-origin: center bottom;
   transform-origin: center bottom;
 }
 
 .ui.top.right.popup {
   -webkit-transform-origin: right bottom;
-  -ms-transform-origin: right bottom;
   transform-origin: right bottom;
 }
 
@@ -23928,14 +23877,12 @@ a.ui.nag {
 .ui.left.center.popup {
   margin: 0em 0.75em 0em 0em;
   -webkit-transform-origin: right 50%;
-  -ms-transform-origin: right 50%;
   transform-origin: right 50%;
 }
 
 .ui.right.center.popup {
   margin: 0em 0em 0em 0.75em;
   -webkit-transform-origin: left 50%;
-  -ms-transform-origin: left 50%;
   transform-origin: left 50%;
 }
 
@@ -23947,19 +23894,16 @@ a.ui.nag {
 
 .ui.bottom.left.popup {
   -webkit-transform-origin: left top;
-  -ms-transform-origin: left top;
   transform-origin: left top;
 }
 
 .ui.bottom.center.popup {
   -webkit-transform-origin: center top;
-  -ms-transform-origin: center top;
   transform-origin: center top;
 }
 
 .ui.bottom.right.popup {
   -webkit-transform-origin: right top;
-  -ms-transform-origin: right top;
   transform-origin: right top;
 }
 
@@ -25151,7 +25095,6 @@ a.ui.nag {
   top: 100%;
   left: 0%;
   -webkit-transform-origin: center top;
-  -ms-transform-origin: center top;
   transform-origin: center top;
   background: #FFFFFF;
   margin-top: 0.5em;
@@ -25643,7 +25586,9 @@ body.pushable {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
   will-change: transform;
   z-index: 101;
 }
@@ -25659,7 +25604,9 @@ body.pushable {
   overflow: hidden;
   min-height: 100%;
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
   z-index: 2;
 }
 
@@ -25926,7 +25873,9 @@ html.ios body {
 .animating.ui.overlay.sidebar,
 .ui.visible.overlay.sidebar {
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 /* End - Sidebar */
@@ -25956,7 +25905,6 @@ html.ios body {
 .ui.visible.overlay.sidebar ~ .fixed,
 .ui.visible.overlay.sidebar ~ .pusher {
   -webkit-transform: none !important;
-  -ms-transform: none !important;
   transform: none !important;
 }
 
@@ -25968,7 +25916,9 @@ html.ios body {
 
 .ui.push.sidebar {
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
   z-index: 102;
 }
 
@@ -26019,7 +25969,9 @@ html.ios body {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 /*--------------
@@ -26058,7 +26010,9 @@ html.ios body {
 
 .ui.animating.slide.along.sidebar {
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 /* End */
@@ -26104,7 +26058,9 @@ html.ios body {
 
 .ui.animating.slide.out.sidebar {
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 /* End */
@@ -26122,7 +26078,9 @@ html.ios body {
 
 .ui.scale.down.sidebar {
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
   z-index: 102;
 }
 
@@ -26152,25 +26110,21 @@ html.ios body {
 
 .ui.scale.down.left.sidebar ~ .pusher {
   -webkit-transform-origin: 75% 50%;
-  -ms-transform-origin: 75% 50%;
   transform-origin: 75% 50%;
 }
 
 .ui.scale.down.right.sidebar ~ .pusher {
   -webkit-transform-origin: 25% 50%;
-  -ms-transform-origin: 25% 50%;
   transform-origin: 25% 50%;
 }
 
 .ui.scale.down.top.sidebar ~ .pusher {
   -webkit-transform-origin: 50% 75%;
-  -ms-transform-origin: 50% 75%;
   transform-origin: 50% 75%;
 }
 
 .ui.scale.down.bottom.sidebar ~ .pusher {
   -webkit-transform-origin: 50% 25%;
-  -ms-transform-origin: 50% 25%;
   transform-origin: 50% 25%;
 }
 
@@ -26178,7 +26132,9 @@ html.ios body {
 
 .ui.animating.scale.down > .visible.ui.sidebar {
   -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
   transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 .ui.visible.scale.down.sidebar ~ .pusher,
@@ -26198,7 +26154,6 @@ html.ios body {
 
 .ui.visible.scale.down.sidebar ~ .pusher {
   -webkit-transform: scale(0.75);
-  -ms-transform: scale(0.75);
   transform: scale(0.75);
 }
 
@@ -26641,7 +26596,6 @@ html.ios body {
 
 .drop.transition {
   -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
   transform-origin: top center;
   -webkit-animation-duration: 400ms;
   animation-duration: 400ms;
@@ -27807,7 +27761,6 @@ html.ios body {
   -webkit-animation-name: slideInY;
   animation-name: slideInY;
   -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
   transform-origin: top center;
 }
 
@@ -27815,7 +27768,6 @@ html.ios body {
   -webkit-animation-name: slideInY;
   animation-name: slideInY;
   -webkit-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
   transform-origin: bottom center;
 }
 
@@ -27823,7 +27775,6 @@ html.ios body {
   -webkit-animation-name: slideInX;
   animation-name: slideInX;
   -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
   transform-origin: center right;
 }
 
@@ -27831,7 +27782,6 @@ html.ios body {
   -webkit-animation-name: slideInX;
   animation-name: slideInX;
   -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
   transform-origin: center left;
 }
 
@@ -27840,7 +27790,6 @@ html.ios body {
   -webkit-animation-name: slideOutY;
   animation-name: slideOutY;
   -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
   transform-origin: top center;
 }
 
@@ -27848,7 +27797,6 @@ html.ios body {
   -webkit-animation-name: slideOutY;
   animation-name: slideOutY;
   -webkit-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
   transform-origin: bottom center;
 }
 
@@ -27856,7 +27804,6 @@ html.ios body {
   -webkit-animation-name: slideOutX;
   animation-name: slideOutX;
   -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
   transform-origin: center right;
 }
 
@@ -27864,7 +27811,6 @@ html.ios body {
   -webkit-animation-name: slideOutX;
   animation-name: slideOutX;
   -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
   transform-origin: center left;
 }
 
@@ -27997,7 +27943,6 @@ html.ios body {
   -webkit-animation-name: swingInX;
   animation-name: swingInX;
   -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
   transform-origin: top center;
 }
 
@@ -28005,7 +27950,6 @@ html.ios body {
   -webkit-animation-name: swingInX;
   animation-name: swingInX;
   -webkit-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
   transform-origin: bottom center;
 }
 
@@ -28013,7 +27957,6 @@ html.ios body {
   -webkit-animation-name: swingInY;
   animation-name: swingInY;
   -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
   transform-origin: center right;
 }
 
@@ -28021,7 +27964,6 @@ html.ios body {
   -webkit-animation-name: swingInY;
   animation-name: swingInY;
   -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
   transform-origin: center left;
 }
 
@@ -28030,7 +27972,6 @@ html.ios body {
   -webkit-animation-name: swingOutX;
   animation-name: swingOutX;
   -webkit-transform-origin: top center;
-  -ms-transform-origin: top center;
   transform-origin: top center;
 }
 
@@ -28038,7 +27979,6 @@ html.ios body {
   -webkit-animation-name: swingOutX;
   animation-name: swingOutX;
   -webkit-transform-origin: bottom center;
-  -ms-transform-origin: bottom center;
   transform-origin: bottom center;
 }
 
@@ -28046,7 +27986,6 @@ html.ios body {
   -webkit-animation-name: swingOutY;
   animation-name: swingOutY;
   -webkit-transform-origin: center right;
-  -ms-transform-origin: center right;
   transform-origin: center right;
 }
 
@@ -28054,7 +27993,6 @@ html.ios body {
   -webkit-animation-name: swingOutY;
   animation-name: swingOutY;
   -webkit-transform-origin: center left;
-  -ms-transform-origin: center left;
   transform-origin: center left;
 }
 

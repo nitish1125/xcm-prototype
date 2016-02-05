@@ -250,7 +250,7 @@
 
 @secondaryPointingHoverTextColor: @textColor;
 
-@secondaryPointingActiveBorderColor: @orange;
+@secondaryPointingActiveBorderColor: @black;
 @secondaryPointingActiveTextColor: @selectedTextColor;
 @secondaryPointingActiveFontWeight: bold;
 

@@ -67,7 +67,6 @@
       Borders
 --------------------*/
 @solidWhiteBorderColor          : transparent;
-@solidBorderColor               : transparent;
 /*-------------------
     Derived Values
 --------------------*/

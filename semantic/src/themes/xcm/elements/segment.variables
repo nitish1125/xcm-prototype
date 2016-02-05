@@ -1,0 +1,53 @@
+/*******************************
+            Segment
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/*-------------------
+       Group
+--------------------*/
+
+/*-------------------
+       Coupling
+--------------------*/
+
+/* Page Grid Segment */
+
+/*******************************
+            States
+*******************************/
+
+/* Loading Dimmer */
+
+/* Loading Spinner */
+
+
+/*******************************
+            Variations
+*******************************/
+
+/* Piled */
+
+/* Circular */
+
+/* Stacked */
+
+/* Raised */
+
+/* Padded */
+
+/* Attached */
+@attachedBorder: @borderWidth solid transparent;
+
+/* Inverted */
+
+/* Floated */
+
+/* Basic */
+
+/* Colors */
+
+/* Ordinality */

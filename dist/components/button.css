@@ -1309,7 +1309,7 @@
 .ui.inverted.black.buttons .button,
 .ui.inverted.black.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px transparent inset !important;
+  box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
   color: #FFFFFF;
 }
 .ui.inverted.black.buttons .button:hover,
@@ -1449,7 +1449,7 @@
 .ui.inverted.grey.buttons .button,
 .ui.inverted.grey.button {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px transparent inset !important;
+  box-shadow: 0px 0px 0px 2px #D4D4D5 inset !important;
   color: #FFFFFF;
 }
 .ui.inverted.grey.buttons .button:hover,

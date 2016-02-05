@@ -1142,17 +1142,17 @@
 .ui.celled.grid {
   width: 100%;
   margin: 1em 0em;
-  box-shadow: 0px 0px 0px 1px transparent;
+  box-shadow: 0px 0px 0px 1px #D4D4D5;
 }
 .ui.celled.grid > .row {
   width: 100% !important;
   margin: 0em;
   padding: 0em;
-  box-shadow: 0px -1px 0px 0px transparent;
+  box-shadow: 0px -1px 0px 0px #D4D4D5;
 }
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
-  box-shadow: -1px 0px 0px 0px transparent;
+  box-shadow: -1px 0px 0px 0px #D4D4D5;
 }
 .ui.celled.grid > .column:first-child,
 .ui.celled.grid > .row > .column:first-child {
@@ -1523,7 +1523,7 @@
   
 /* Celled Reversed */
   .ui[class*="mobile reversed"].celled.grid > .row > .column:first-child {
-    box-shadow: -1px 0px 0px 0px transparent;
+    box-shadow: -1px 0px 0px 0px #D4D4D5;
   }
   .ui[class*="mobile reversed"].celled.grid > .row > .column:last-child {
     box-shadow: none;
@@ -1569,7 +1569,7 @@
   
 /* Celled Reversed */
   .ui[class*="tablet reversed"].celled.grid > .row > .column:first-child {
-    box-shadow: -1px 0px 0px 0px transparent;
+    box-shadow: -1px 0px 0px 0px #D4D4D5;
   }
   .ui[class*="tablet reversed"].celled.grid > .row > .column:last-child {
     box-shadow: none;
@@ -1615,7 +1615,7 @@
   
 /* Celled Reversed */
   .ui[class*="computer reversed"].celled.grid > .row > .column:first-child {
-    box-shadow: -1px 0px 0px 0px transparent;
+    box-shadow: -1px 0px 0px 0px #D4D4D5;
   }
   .ui[class*="computer reversed"].celled.grid > .row > .column:last-child {
     box-shadow: none;

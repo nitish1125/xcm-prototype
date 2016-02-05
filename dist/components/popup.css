@@ -25,7 +25,7 @@
   min-width: -moz-min-content;
   min-width: min-content;
   z-index: 1900;
-  border: 1px solid transparent;
+  border: 1px solid #D4D4D5;
   line-height: 1.4285em;
   max-width: 250px;
   background: #FFFFFF;
@@ -55,7 +55,7 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   z-index: 2;
-  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 1px 1px 0px 0px #bababc;
 }
 
 
@@ -131,7 +131,7 @@
   left: 50%;
   right: auto;
   bottom: auto;
-  box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: -1px -1px 0px 0px #bababc;
 }
 .ui.bottom.left.popup {
   margin-left: 0em;
@@ -143,7 +143,7 @@
   right: auto;
   bottom: auto;
   margin-left: 0em;
-  box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: -1px -1px 0px 0px #bababc;
 }
 .ui.bottom.right.popup {
   margin-right: 0em;
@@ -155,7 +155,7 @@
   bottom: auto;
   left: auto;
   margin-left: 0em;
-  box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: -1px -1px 0px 0px #bababc;
 }
 
 /*--- Above ---*/
@@ -199,7 +199,7 @@
   bottom: auto;
   left: auto;
   margin-top: -0.325em;
-  box-shadow: 1px -1px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 1px -1px 0px 0px #bababc;
 }
 
 /*--- Right Center  ---*/
@@ -211,7 +211,7 @@
   bottom: auto;
   right: auto;
   margin-top: -0.325em;
-  box-shadow: -1px 1px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: -1px 1px 0px 0px #bababc;
 }
 
 /* Arrow Color By Location */

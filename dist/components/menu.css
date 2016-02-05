@@ -624,7 +624,7 @@ Floated Menu / Item
   box-shadow: none !important;
   border: none;
   background: none transparent;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #D4D4D5;
 }
 .ui.tabular.fluid.menu {
   width: calc(100% +  2px ) !important;
@@ -653,7 +653,7 @@ Floated Menu / Item
   background: none #FFFFFF;
   color: #F68E1F;
   border-top-width: 1px;
-  border-color: transparent;
+  border-color: #D4D4D5;
   font-weight: bold;
   margin-bottom: -1px;
   box-shadow: none;
@@ -679,7 +679,7 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-top: 1px solid transparent;
+  border-top: 1px solid #D4D4D5;
 }
 .ui.bottom.tabular.menu .item {
   background: none;
@@ -691,7 +691,7 @@ Floated Menu / Item
 .ui.bottom.tabular.menu .active.item {
   background: none #FFFFFF;
   color: #F68E1F;
-  border-color: transparent;
+  border-color: #D4D4D5;
   margin: -1px 0px 0px 0px;
   border-radius: 0px 0px 0.30769231rem 0.30769231rem !important;
 }
@@ -702,7 +702,7 @@ Floated Menu / Item
   border-radius: 0em;
   box-shadow: none !important;
   border-bottom: none;
-  border-right: 1px solid transparent;
+  border-right: 1px solid #D4D4D5;
 }
 .ui.vertical.tabular.menu .item {
   background: none;
@@ -714,7 +714,7 @@ Floated Menu / Item
 .ui.vertical.tabular.menu .active.item {
   background: none #FFFFFF;
   color: #F68E1F;
-  border-color: transparent;
+  border-color: #D4D4D5;
   margin: 0px -1px 0px 0px;
   border-radius: 0.30769231rem 0px 0px 0.30769231rem !important;
 }
@@ -726,7 +726,7 @@ Floated Menu / Item
   box-shadow: none !important;
   border-bottom: none;
   border-right: none;
-  border-left: 1px solid transparent;
+  border-left: 1px solid #D4D4D5;
 }
 .ui.vertical.right.tabular.menu .item {
   background: none;
@@ -738,7 +738,7 @@ Floated Menu / Item
 .ui.vertical.right.tabular.menu .active.item {
   background: none #FFFFFF;
   color: #F68E1F;
-  border-color: transparent;
+  border-color: #D4D4D5;
   margin: 0px 0px 0px -1px;
   border-radius: 0px 0.30769231rem 0.30769231rem 0px !important;
 }
@@ -1813,8 +1813,8 @@ Floated Menu / Item
   width: 0.61538462em;
   height: 0.61538462em;
   border: none;
-  border-bottom: 1px solid transparent;
-  border-right: 1px solid transparent;
+  border-bottom: 1px solid #D4D4D5;
+  border-right: 1px solid #D4D4D5;
   z-index: 2;
   -webkit-transition: background 0.1s ease;
   transition: background 0.1s ease;
@@ -1829,8 +1829,8 @@ Floated Menu / Item
           transform: translateX(50%) translateY(-50%) rotate(45deg);
   margin: 0em -0.5px 0em 0em;
   border: none;
-  border-top: 1px solid transparent;
-  border-right: 1px solid transparent;
+  border-top: 1px solid #D4D4D5;
+  border-right: 1px solid #D4D4D5;
 }
 
 /* Active */
@@ -1921,7 +1921,7 @@ Floated Menu / Item
 
 /* Tabular Attached */
 .ui.attached.menu:not(.tabular) {
-  border: 1px solid transparent;
+  border: 1px solid #D4D4D5;
 }
 .ui.attached.inverted.menu {
   border: none;

@@ -80,7 +80,6 @@
         <div class="jurisdiction-info">
             <div class="ui attached segment">
                 <div class="ui grid">
-                    
                     <div class="right floated right aligned ten wide column">
                         <div class="ui divided horizontal link list">
                             <a class="item">Tips</a>
@@ -116,14 +115,21 @@
                                 <span id="spanjurisdictionCount">6</span>
                             </div>
 
-                            <div class="ui horizontal list">
+                            <div class="ui horizontal juripopup-trigger list">
                                 <a class="item bottom aligned" href="#">
                                     <div class="svg-info svg-info-dims">
 
                                     </div>
                                 </a>
                             </div>
+
                         </div>
+
+                            <div class="ui juriinfo popup ">
+                            The filing dates for the federal and state tax 1040, 1041, 1065, 1120 and 1120s forms have been included in XCM for your convenience.
+                            There may be changes made by the IRS or the individual states prior to XCM updating our database. As a result, we strongly suggest that you review the
+                            federal and state filing dates and do not rely solely on the dates within XCM.
+                            </div>
                         <div class="right aligned eight wide column">
                             <div class="ui tiny blue button">&#43;   Add Jurisdiction</div>
                         </div>
@@ -303,22 +309,32 @@
         
 
 
-$('.task-info')
-  .popup({
-    popup : $('.custom.popup'),
-    on    : 'hover',
-    hoverable:'true',
-  })
-;
+                $('.task-info')
+                  .popup({
+                    popup : $('.custom.popup'),
+                    on    : 'hover',
+                    hoverable:'true',
+                  })
+                ;
 
-$('.filter-off')
-  .popup({
-    popup : $('.filter.popup'),
-    on    : 'click',
-    position : 'bottom right',
-    setFluidWidth:'true',
-  })
-;
+
+                $('.juripopup-trigger')
+                  .popup({
+                    popup : $('.juriinfo'),
+                    on    : 'hover',
+                    hoverable:'true',
+                  })
+                ;
+
+
+                $('.filter-off')
+                  .popup({
+                    popup : $('.filter.popup'),
+                    on    : 'click',
+                    position : 'bottom right',
+                    setFluidWidth:'true',
+                  })
+                ;
 
 
         });

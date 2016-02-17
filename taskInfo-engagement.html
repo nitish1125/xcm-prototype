@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My View - XCM Solutions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="/dist/components/site.css">
+        <link rel="stylesheet" href="/dist/components/reset.css">
+        <link rel="stylesheet" href="/dist/components/transition.css">
+        <link rel="stylesheet" href="/dist/components/segment.css">
+        <link rel="stylesheet" href="/dist/components/menu.css">
+        <link rel="stylesheet" href="/dist/components/form.css">
+        <link rel="stylesheet" href="/dist/components/input.css">
+        <link rel="stylesheet" href="/dist/components/dropdown.css">
+        <link rel="stylesheet" href="/dist/components/search.css">
+        <link rel="stylesheet" href="/dist/components/button.css">
+        <link rel="stylesheet" href="/dist/components/grid.css">
+        <link rel="stylesheet" href="/dist/components/list.css">
+        <link rel="stylesheet" href="/dist/components/item.css">
+        <link rel="stylesheet" href="/dist/components/statistic.css">
+        <link rel="stylesheet" href="/dist/components/container.css">
+        <link rel="stylesheet" href="/dist/components/divider.min.css">
+        <link rel="stylesheet" href="/bower_components/handsontable/dist/handsontable.full.css">
+        <link rel="stylesheet" href="/dist/semantic.min.css">
+        <link rel="stylesheet" href="/dist/css/sprite.css">
+    </head>
+
+    <body>
+        
+        <div class="ui fluid container">
+            <div class="ui inverted blue secondary pointing menu">
+                <div class="item">
+                    XCM
+                </div>
+                <a class="active item">
+                    My View
+                </a>
+                <a class="item">
+                    Dashboard
+                </a>
+                <a class="item">
+                    Reports
+                </a>
+                <div class="right menu">
+                    <div class="item ui search">
+                        <div class="ui icon input">
+                            <input class="prompt" placeholder="Search Here..." type="text">
+                            <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
+                    </div>
+                    <a  href="#">
+                        <div class="svg-add_details svg-add_details-dims">
+                        </div>
+                    </a>
+                    <a class="item">
+                        XCM Solutions, LLC SS
+                    </a>
+                    <a href="#">
+                        <div class="svg-cog_wheel svg-cog_wheel-dims">
+                        </div>
+                    </a>
+                    <div class="ui pointing dropdown link item">
+                        <span class="text">John Doe</span>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item">My Profile</div>
+                            <div class="item">Logout</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jurisdiction-info">
+            <div class="ui attached segment">
+                <div class="ui grid">
+                    
+                    <div class="right floated right aligned ten wide column">
+                        <div class="ui divided horizontal link list">
+                            <a class="item">Tips</a>
+                            <a class="item">Video</a>
+                            <a class="item">Help</a>
+                        </div>
+                        <div class="ui horizontal list">
+                            <a class="item bottom aligned" href="#">
+                                <div class="svg-close_window svg-close_window-dims">
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="left floated left aligned sixteen wide column">
+                        <div class="ui secondary large pointing menu">
+                            <a class="link item">Task information</a>
+                            <a class="link item">Jurisdictions</a>
+                            <a class="link item">Assembly</a>
+                            <a class="link item ">Shipping</a>
+                            <a class="link item">eFile</a>
+                            <a class="link item ">SignOff</a>
+                            <a class="link item active">Engagement</a>
+                            <a class="link item ">Extension</a>
+                            <div class="item right floated">Current status: Recurring</div>
+                        </div>
+                    </div>
+                    <div class="sixteen wide column">
+                        <div id="engagement-grid" class="ui four column grid form">
+                            <div class="three wide column">
+                                <label>PCAOB or Non Public</label>
+                            </div>
+                            <div class="five wide column">
+                                <select class="ui fluid dropdown">
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            
+                            <div class="three wide column"></div>
+                            <div class="five wide column">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <label>Current Year</label>
+                                    </div>
+                                    
+                                    <div class="seven wide column right floated">
+                                        <label>Prior Year</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three wide column">
+                                <label>Entity Structure</label>
+                            </div>
+                            <div class="five wide column">
+                                <select class="ui fluid dropdown">
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            
+                            <div class="three wide column">Plannig End Date</div>
+                            <div class="five wide column">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                    <div class="two wide column"></div>
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three wide column">
+                                <label>Description of other Entity</label>
+                            </div>
+                            <div class="five wide column">
+                                <input type="text">
+                            </div>
+                            
+                            <div class="three wide column">Field Work Begin Date</div>
+                            <div class="five wide column">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                    <div class="two wide column"></div>
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three wide column">
+                                <label>Financial statement date</label>
+                            </div>
+                            <div class="five wide column">
+                                <input type="text">
+                            </div>
+                            
+                            <div class="three wide column">Field Work End Date</div>
+                            <div class="five wide column">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                    <div class="two wide column"></div>
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three wide column">
+                                <label>Basis of Accounting</label>
+                            </div>
+                            <div class="five wide column">
+                                <select class="ui fluid dropdown">
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            
+                            <div class="three wide column">Management Letter Due Date</div>
+                            <div class="five wide column">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                    <div class="two wide column"></div>
+                                    <div class="seven wide column">
+                                        <input type="text" placeholder="MM/DD/YYYY">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="three wide column">
+                                <label>Industry</label>
+                            </div>
+                            <div class="five wide column">
+                                <select class="ui fluid dropdown">
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+
+                            <div class="three wide column">Fees</div>
+                            <div class="five wide column">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <input type="text">
+                                    </div>
+                                    <div class="two wide column"></div>
+                                    <div class="seven wide column">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/dist/components/dropdown.js"></script>
+        <script src="/dist/components/transition.js"></script>
+        <script src="/dist/components/search.js"></script>
+        <script src="/dist/semantic.min.js"></script>
+        <script>
+        $(function () { 
+
+            $('.ui.dropdown').dropdown({
+              on: 'hover'
+              
+            });
+
+$('.task-info')
+  .popup({
+    popup : $('.custom.popup'),
+    on    : 'hover',
+    hoverable:'true',
+  })
+;
+
+$('.filter-off')
+  .popup({
+    popup : $('.filter.popup'),
+    on    : 'click',
+    position : 'bottom right',
+    setFluidWidth:'true',
+  })
+;
+
+
+        });
+        </script>
+        
+    </body>
+</html>
+
+

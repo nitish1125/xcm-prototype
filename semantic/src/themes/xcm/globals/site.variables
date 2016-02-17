@@ -1,11 +1,12 @@
-
 /*******************************
          Site Settings
 *******************************/
+
 /*-------------------
        Fonts
 --------------------*/
-@fontName          : 'Museo';
+
+@fontName           : 'Museo';
 @importGoogleFonts  : "false";
 
 /*-------------------
@@ -15,64 +16,173 @@
 /* This is the single variable that controls them all */
 @emSize       : 13px;
 
+/* The size of page text  */
+
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+
+
+/*-------------------
+    Brand Colors
+--------------------*/
+@secondaryColor   : @orange;
 
 /*--------------
   Page Heading
 ---------------*/
-@h1         : 2.25em;
+@h1               : 2.25em;
 @headerFontWeight : 100;
+/*--------------
+   Form Input
+---------------*/
+
+/* This adjusts the default form input across all elements */
+
+/* Line Height Default For Inputs in Browser */
+
+
+/*-------------------
+    Focused Input
+--------------------*/
+
+/* Used on inputs, textarea etc */
+
+/* Used on dropdowns, other larger blocks */
+
+/*-------------------
+        Sizes
+--------------------*/
+
+/*
+  Sizes are all expressed in terms of 14px/em (default em)
+  This ensures these "ratios" remain constant despite changes in EM
+*/
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageOverflowX        : hidden;
+@textColor            : #4D6486;
+
+/*-------------------
+      Paragraph
+--------------------*/
+
+/*-------------------
+       Links
+--------------------*/
+
+/*-------------------
+  Highlighted Text
+--------------------*/
+
+/*-------------------
+       Loader
+--------------------*/
+
+/*-------------------
+        Grid
+--------------------*/
+
+/*-------------------
+     Transitions
+--------------------*/
+
+/*-------------------
+     Breakpoints
+--------------------*/
 
 /*-------------------
       Site Colors
 --------------------*/
 
-  /* Colors */
-@blue     : #445978;
-@red      : #FF8383;
-@black    : #445978;
-@grey     : #FAFAFA;
-@orange   : #F68E1F;
-/*-------------------
-    Brand Colors
---------------------*/
+/*---  Colors  ---*/
 
-@secondaryColor   : @orange;
+/*---  Light Colors  ---*/
+
+/*---   Neutrals  ---*/
+
+/*--- Colored Backgrounds ---*/
+
+/*--- Colored Headers ---*/
+
+/*--- Colored Text ---*/
 
 /*-------------------
      Alpha Colors
 --------------------*/
 @transparentBlack           : #EDF2F5;
 @subtleTransparentBlack     : #EDF2F5;
-
-
 /*-------------------
-        Page
+       Accents
 --------------------*/
-@pageOverflowX    		: hidden;
-@textColor           	: #4D6486;
 
+/* Differentiating Neutrals */
+
+/* Differentiating Layers */
 
 /*******************************
            Power-User
 *******************************/
 
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Positive */
+
+/* Negative */
+
+/* Info */
+
+/* Warning */
+
 /*-------------------
         Paths
 --------------------*/
-
 @fontPath : '../../themes/xcm/assets/fonts';
+/* For source only. Modified in gulp for dist */
+
+/*-------------------
+       Em Sizes
+--------------------*/
+
+/*
+  This rounds @size values to the closest pixel then expresses that value in (r)em.
+  This ensures all size values round to exact pixels
+*/
+
+/* em */
+
+/* rem */
+
+/*-------------------
+  Exact Pixel Values
+--------------------*/
+/*
+  These are used to specify exact pixel values in em
+  for things like borders that remain constantly
+  sized as emSize adjusts
+
+  Since there are many more sizes than names for sizes,
+  these are named by their original pixel values.
+
+*/
 
 
 /*-------------------
-      Borders
---------------------*/
-@solidWhiteBorderColor          : transparent;
-/*-------------------
-    Derived Values
+       Icons
 --------------------*/
 
-/* Minimum Mobile Width */
-@pageMinWidth   : 1140px;
+/* Maximum Glyph Width of Icon */
 
 /*-------------------
      Neutral Text
@@ -81,3 +191,110 @@
 @invertedLightTextColor      : #fff;
 @selectedTextColor           : @orange;
 
+/*-------------------
+     Brand Colors
+--------------------*/
+/*-------------------
+      Borders
+--------------------*/
+@solidWhiteBorderColor          : transparent;
+
+/*-------------------
+    Derived Values
+--------------------*/
+
+/* Loaders Position Offset */
+
+
+/* Rendered Scrollbar Width */
+
+
+/* Maximum Single Character Glyph Width, aka Capital "W" */
+
+
+/* Used to match floats with text */
+
+
+/* Header Spacing */
+
+
+/* Minimum Mobile Width */
+@pageMinWidth   : 1140px;
+
+/* Positive / Negative Dupes */
+
+
+
+/* Responsive */
+
+
+/* Columns */
+
+
+
+/*******************************
+             States
+*******************************/
+
+/*-------------------
+      Disabled
+--------------------*/
+
+/*-------------------
+        Hover
+--------------------*/
+
+/*---  Colors  ---*/
+@blue     : #445978;
+@red      : #FF8383;
+@black    : #445978;
+@grey     : #FAFAFA;
+@orange   : #F68E1F;
+/*---  Emotive  ---*/
+
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+/*-------------------
+        Focus
+--------------------*/
+
+/*---  Colors  ---*/
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/
+
+
+/*-------------------
+    Down (:active)
+--------------------*/
+
+/*---  Colors  ---*/
+
+
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+
+/*---  Light Tones  ---*/
+
+
+/*-------------------
+        Active
+--------------------*/
+
+/*---  Colors  ---*/
+
+/*---  Emotive  ---*/
+
+/*---  Brand   ---*/
+
+/*---  Dark Tones  ---*/
+/*---  Light Tones  ---*/

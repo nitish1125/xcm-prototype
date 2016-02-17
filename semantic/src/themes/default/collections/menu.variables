@@ -168,7 +168,7 @@
 
 /* Active Item */
 @activeItemBackground: @transparentBlack;
-@activeItemTextColor: @selectedTextColor;
+@activeItemTextColor: @red;
 @activeItemFontWeight: normal;
 @activeIconOpacity: 1;
 @activeItemBoxShadow: none;

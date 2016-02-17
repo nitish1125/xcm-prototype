@@ -441,7 +441,7 @@
 
 .ui.menu .active.item {
   background: #EDF2F5;
-  color: #F68E1F;
+  color: #FF8383;
   font-weight: normal;
   box-shadow: none;
 }
@@ -612,7 +612,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: #F68E1F;
+  color: #FF8383;
 }
 
 /*--------------

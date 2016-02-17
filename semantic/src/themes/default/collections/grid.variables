@@ -53,7 +53,7 @@
 @celledWidth: 1px;
 @celledBorderColor: @solidBorderColor;
 
-@celledPadding: 1em;
+@celledPadding: 0em;
 @celledRelaxedPadding: 1.5em;
 @celledVeryRelaxedPadding: 2em;
 

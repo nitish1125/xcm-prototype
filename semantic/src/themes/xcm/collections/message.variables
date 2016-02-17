@@ -1,0 +1,34 @@
+/*******************************
+            Message
+*******************************/
+
+// @textColor
+
+/*-------------------
+       Elements
+--------------------*/
+
+@verticalPadding: 0.5em;
+@horizontalPadding: 0.4em;
+
+/* Header */
+
+/* Paragraph */
+
+/* List */
+
+/* Icon */
+
+/* Close Icon */
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Icon Message */
+
+/* Attached */
+
+/* Floating */
+
+/* Warning / Positive / Negative / Info */

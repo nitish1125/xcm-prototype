@@ -7,6 +7,8 @@
         <title>My View - XCM Solutions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="/dist/components/modal.min.css">
+        <link rel="stylesheet" href="/dist/components/dimmer.css">
         <link rel="stylesheet" href="/dist/components/site.css">
         <link rel="stylesheet" href="/dist/components/reset.css">
         <link rel="stylesheet" href="/dist/components/transition.css">
@@ -18,14 +20,12 @@
         <link rel="stylesheet" href="/dist/components/search.css">
         <link rel="stylesheet" href="/dist/components/button.css">
         <link rel="stylesheet" href="/dist/components/grid.css">
-        <link rel="stylesheet" href="/dist/semantic.css">
         <link rel="stylesheet" href="/dist/components/list.css">
         <link rel="stylesheet" href="/dist/components/item.css">
         <link rel="stylesheet" href="/dist/components/statistic.css">
         <link rel="stylesheet" href="/dist/components/container.css">
         <link rel="stylesheet" href="/dist/components/divider.min.css">
         <link rel="stylesheet" href="/bower_components/handsontable/dist/handsontable.full.css">
-        <link rel="stylesheet" href="/dist/semantic.min.css">
         <link rel="stylesheet" href="/dist/css/sprite.css">
     </head>
 
@@ -131,12 +131,12 @@
                                 <a href="#" class="item">
                                     <span class="ui image svg-task_issues svg-task_issues-dims">
                                     </span>
-                                    <h4 class="content ">Add Instructions</h4>
+                                    <h4 class="content " id="addInstruction">Add Instructions</h4>
                                 </a>
                                 <a href="#" class="item">
                                     <span class="ui image svg-task_issues svg-task_issues-dims">
                                     </span>
-                                    <h4 class="content ">Add Attachments</h4>
+                                    <h4 class="content" id="addAttachment">Add Attachments</h4>
                                 </a>
                                 <a href="#" class="item">
                                     <span class="ui image svg-task_issues svg-task_issues-dims">
@@ -166,11 +166,114 @@
 
             </div>
         </div>    
+        
+    
+        <div class="ui small scrolling modal instruction-modal transition">
+            <div class="header">
+                <label>Add Instructions</label>
+            </div>
+            <div class="content">
+                <div class="ui grid form">
+                    <div class="sixteen wide column">
+                        <div class="ui comments">
+                            <textarea placeholder="Enter General assembly Instruction here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="ui button" id="close-instruction">Cancel</button> 
+                <button class="ui primary button">Save Instruction</button>
+            </div>
+        </div>
+
+
+        <div class="ui medium scrolling modal attachment-modal transition">
+            <div class="header">
+                <label>Add Attachments</label>
+                <div class="ui divided horizontal list right floated">
+                    <a class="item" title="coming soon">Tips</a>
+                    <a class="item" data-content="coming soon">Video</a>
+                    <a class="item" data-content="coming soon">Help</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="ui grid">
+                    <div class="eight wide column">
+                        <div class="ui two column grid form" id="taskinfoEditGrid">
+                            <div class="sixteen wide column">
+                                <div class="ui form">
+                                    <div class="inline fields">
+                                        <div class="field">
+                                            <div class="ui radio checkbox checked">
+                                                <input type="radio" data-type="existing" name="attachmentType" checked="checked" tabindex="0" class="hidden">
+                                                <label>Existing</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="ui radio checkbox">
+                                                <input type="radio" data-type="new" name="attachmentType" tabindex="0" class="hidden">
+                                                <label>New</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <label>Attachment Type</label>
+                            </div><div class="nine wide column">
+                            <select class="ui dropdown" id="selectAttachmentType">
+                                <option value="0">--Select--</option>
+                                <option value="1">W-2</option>
+                                <option value="2">1099</option>
+                                <option value="3">Brokerage Statement</option>
+                                <option value="4">Capital Gains Calculation</option>
+                                <option value="5">Financial Statements</option>
+                                <option value="6">Form 8697</option>
+                                <option value="7">IRS Notice</option>
+                                <option value="8">Journal Entries</option>
+                                <option value="9">Memo</option>
+                                <option value="10">Projections</option>
+                                <option value="11">Tax Returns</option>
+                                <option value="12">Workpapers</option>
+                                <option value="13">Extension</option>
+                                <option value="16">Return Client Data</option>
+                                <option value="17">Trial Balance</option>
+                                <option value="18">K-1 to Client Binder</option>
+                                <option value="19">Form 8453 Consolidated Federal</option>
+                                <option value="20">Separate Company Federal</option>
+                                <option value="21">Federal Extension</option>
+                                <option value="22">State Extension</option>
+                                <option value="23">Federal Estimates</option>
+                                <option value="24">State Estimates</option>
+                                <option value="25">8453</option>
+                                <option value="26">K-1</option>
+                            </select>
+                            <input type="text" id="txtattachmentType" placeholder="Enter here..."></div>
+                            <div class="sixteen wide column">
+                                <div class="ui comments">
+                                    <textarea id="assemblyAttachComments" placeholder="Enter Description here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="sixteen wide column">
+                                <button class="ui primary button" id="buttonAddToList">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide column">
+                        <p>Attachment List</p>
+                        <ul id="selectedlistAssemblyAttachment"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button class="ui button" id="close-attachment" >Cancel</button> 
+                <button class="ui primary button" id="buttonAddAttachments">Save</button>
+            </div>
+        </div>
+
 
         
-
-
-
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="/dist/components/dropdown.js"></script>
         <script src="/dist/components/transition.js"></script>
@@ -185,6 +288,23 @@
             $('.ui.dropdown').dropdown({
               on: 'hover'
               
+            });
+
+            $('#addInstruction').click(function(){
+                $('.ui.instruction-modal').modal('show');
+            });
+
+            $('#close-instruction').click(function(){
+                $('.ui.instruction-modal').modal('hide');
+            });
+
+
+            $('#addAttachment').click(function(){
+                $('.ui.attachment-modal').modal('show');
+            });
+
+            $('#close-attachment').click(function(){
+                $('.ui.attachment-modal').modal('hide');
             });
 
             var example1 = document.getElementById('example'),
